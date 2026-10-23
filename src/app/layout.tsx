@@ -9,7 +9,7 @@ const bodyFont = localFont({ src: "./fonts/source-sans-3-latin.woff2", variable:
 const noteFont = localFont({ src: "./fonts/caveat-latin.woff2", variable: "--font-note", weight: "400 700", display: "swap", preload: false });
 
 export const metadata: Metadata = {
-  metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || "https://mirrormetrics.vercel.app"),
+  metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || "https://research-web-platform.vercel.app"),
   title: { default: "Mirror Metrics Research Ltd | Social & Market Research Bangladesh", template: "%s | Mirror Metrics Research Ltd" },
   description: "Social and market research that brings people, communities, and markets into focus. Research design, fieldwork, and analysis in Bangladesh.",
   alternates: { canonical: "/" },

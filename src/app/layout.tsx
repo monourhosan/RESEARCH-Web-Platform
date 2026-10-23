@@ -3,8 +3,9 @@ import { Suspense } from "react";
 import localFont from "next/font/local";
 import SiteShell from "@/components/SiteShell";
 import "./globals.css";
+import "./reference-theme.css";
 
-const displayFont = localFont({ src: "./fonts/bricolage-grotesque-latin.woff2", variable: "--font-display", weight: "400 700", display: "swap" });
+const displayFont = localFont({ src: "./fonts/bricolage-grotesque-latin.woff2", variable: "--font-display", weight: "400 700", display: "swap", preload: false });
 const bodyFont = localFont({ src: "./fonts/source-sans-3-latin.woff2", variable: "--font-body", weight: "200 900", display: "swap" });
 const noteFont = localFont({ src: "./fonts/caveat-latin.woff2", variable: "--font-note", weight: "400 700", display: "swap", preload: false });
 
@@ -17,7 +18,7 @@ export const metadata: Metadata = {
   twitter: { card: "summary_large_image", title: "Mirror Metrics Research Ltd", description: "Social & market research in Bangladesh.", images: ["/opengraph-image"] },
   icons: { icon: "/icon.svg", apple: "/logo.png" },
 };
-export const viewport: Viewport = { themeColor: "#142c3d", width: "device-width", initialScale: 1 };
+export const viewport: Viewport = { themeColor: "#003f34", width: "device-width", initialScale: 1 };
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
   return <html lang="en" className={`${displayFont.variable} ${bodyFont.variable} ${noteFont.variable}`}><body><Suspense fallback={<main>{children}</main>}><SiteShell>{children}</SiteShell></Suspense></body></html>;
 }

@@ -73,3 +73,13 @@ The new survey and focus-group PNGs are in `public/illustrations`. These are gen
 `docs/design/direction.md` records the design decisions and research references. `docs/design/illustration-prompts.md` records the exact built-in image-generation prompts and asset paths. Font source and licensing notes are in `src/app/fonts/README.md`.
 
 The official `anthropics/skills` frontend-design skill was installed locally and read for this update; it will be discoverable in subsequent turns. The interface uses no additional animation library or external runtime font requests.
+
+## Interactive data graphics and hover feedback
+
+The homepage includes `DataGraphics.tsx`: two switchable, invented survey examples with response bars, an age-profile ring, explicit values, and an expandable HTML data table. All example percentages total 100% within each measure, with counts based on 200 illustrative participants. Replace the sample data and its labeling together if approved research is published later.
+
+Chart highlights support mouse hover, keyboard focus, and taps. Cards, buttons, links, illustrations, and process controls use restrained feedback; added pointer hover transforms apply only to devices with a fine pointer. All transitions and animations respect the existing reduced-motion preference.
+
+## Reference-led green editorial redesign
+
+`src/app/reference-theme.css` adapts the supplied visual reference with a framed canvas, immersive hero, forest green and cream sections, light sans-serif headings, pill controls, and image-led service panels. `docs/design/reference-direction.md` records the design plan and final built-in image-generation prompt. The hero asset is `public/illustrations/research-conversation-editorial.png`; it depicts an AI-created illustrative scene, not actual staff or study participants. Existing hand-drawn illustrations are retained in the service and conversation sections. The theme applies across dedicated pages and preserves inquiry delivery behavior.

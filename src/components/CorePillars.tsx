@@ -3,6 +3,7 @@
 import { ArrowRight, Check, UsersRound, ChartColumn, ClipboardCheck } from "lucide-react";
 import ResearchPhoto from "./ResearchPhoto";
 import type { PhotoKey } from "@/data/photography";
+import Link from "next/link";
 
 const services = [
   { Icon: UsersRound, title: "Social & development research", description: "Understand what a program means for the people it serves, and where there is room to do more.", capabilities: ["Baseline, midline & endline studies", "Program & impact evaluation", "Community & livelihood research"], action: "Plan a social research study" },
@@ -20,7 +21,7 @@ export default function CorePillars({ onOpenProposalModal }: { onOpenProposalMod
           {services.map(({ Icon, title, description, capabilities, action }, index) => (
             <article className="service-card" key={title}>
               <ResearchPhoto photo={servicePhotos[index]} className={`service-visual service-visual-${index}`} sizes="(max-width: 767px) 90vw, (max-width: 1023px) 45vw, 30vw" />
-              <div className="service-card-body"><Icon className="service-drawing" /><h3>{title}</h3><p className="service-description">{description}</p><ul className="service-capabilities">{capabilities.map(capability => <li key={capability}><Check size={15} /><span>{capability}</span></li>)}</ul><button type="button" className="service-link" onClick={onOpenProposalModal}>{action}<ArrowRight size={17} /></button></div>
+              <div className="service-card-body"><Icon className="service-drawing" /><h3>{title}</h3><p className="service-description">{description}</p><ul className="service-capabilities">{capabilities.map(capability => <li key={capability}><Check size={15} /><span>{capability}</span></li>)}</ul>{index === 1 ? <Link href="/services/market-research" className="service-link">{action}<ArrowRight size={17} /></Link> : <button type="button" className="service-link" onClick={onOpenProposalModal}>{action}<ArrowRight size={17} /></button>}</div>
             </article>
           ))}
         </div>

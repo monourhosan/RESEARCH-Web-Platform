@@ -777,7 +777,7 @@
     "photographerUrl": "https://www.pexels.com/photo/34644862/",
     "position": "center",
     "license": "Pexels",
-    "download": "https://images.pexels.com/photos/34644862/pexels-photo-34644862.jpeg?auto=compress&cs=tinysrgb&w=1600&q=85"
+    "download": "https://images.pexels.com/photos/34644862/pexels-photo-34644862.jpeg?auto=compress&cs=tinysrgb&w=1400"
   },
   "market-street-life": {
     "src": "/photos/market-street-life.jpg",
@@ -789,7 +789,7 @@
     "photographerUrl": "https://www.pexels.com/photo/34792883/",
     "position": "center",
     "license": "Pexels",
-    "download": "https://images.pexels.com/photos/34792883/pexels-photo-34792883.jpeg?auto=compress&cs=tinysrgb&w=1600&q=85"
+    "download": "https://images.pexels.com/photos/34792883/pexels-photo-34792883.jpeg?auto=compress&cs=tinysrgb&w=1400"
   },
   "market-retail-trade": {
     "src": "/photos/market-retail-trade.jpg",
@@ -801,7 +801,7 @@
     "photographerUrl": "https://www.pexels.com/photo/37527399/",
     "position": "center 45%",
     "license": "Pexels",
-    "download": "https://images.pexels.com/photos/37527399/pexels-photo-37527399.jpeg?auto=compress&cs=tinysrgb&w=1600&q=85"
+    "download": "https://images.pexels.com/photos/37527399/pexels-photo-37527399.jpeg?auto=compress&cs=tinysrgb&w=1400"
   },
   "market-food-service": {
     "src": "/photos/market-food-service.jpg",
@@ -813,7 +813,7 @@
     "photographerUrl": "https://www.pexels.com/photo/36553009/",
     "position": "center 42%",
     "license": "Pexels",
-    "download": "https://images.pexels.com/photos/36553009/pexels-photo-36553009.jpeg?auto=compress&cs=tinysrgb&w=1600&q=85"
+    "download": "https://images.pexels.com/photos/36553009/pexels-photo-36553009.jpeg?auto=compress&cs=tinysrgb&w=1400"
   },
   "market-neighbourhood": {
     "src": "/photos/market-neighbourhood.jpg",
@@ -825,7 +825,7 @@
     "photographerUrl": "https://www.pexels.com/photo/37020663/",
     "position": "center 40%",
     "license": "Pexels",
-    "download": "https://images.pexels.com/photos/37020663/pexels-photo-37020663.jpeg?auto=compress&cs=tinysrgb&w=1600&q=85"
+    "download": "https://images.pexels.com/photos/37020663/pexels-photo-37020663.jpeg?auto=compress&cs=tinysrgb&w=1400"
   },
   "market-working-day": {
     "src": "/photos/market-working-day.jpg",
@@ -837,7 +837,7 @@
     "photographerUrl": "https://www.pexels.com/photo/37196730/",
     "position": "center 42%",
     "license": "Pexels",
-    "download": "https://images.pexels.com/photos/37196730/pexels-photo-37196730.jpeg?auto=compress&cs=tinysrgb&w=1600&q=85"
+    "download": "https://images.pexels.com/photos/37196730/pexels-photo-37196730.jpeg?auto=compress&cs=tinysrgb&w=1400"
   },
   "market-bazaar": {
     "src": "/photos/market-bazaar.jpg",
@@ -849,7 +849,7 @@
     "photographerUrl": "https://www.pexels.com/photo/36541719/",
     "position": "center 40%",
     "license": "Pexels",
-    "download": "https://images.pexels.com/photos/36541719/pexels-photo-36541719.jpeg?auto=compress&cs=tinysrgb&w=1600&q=85"
+    "download": "https://images.pexels.com/photos/36541719/pexels-photo-36541719.jpeg?auto=compress&cs=tinysrgb&w=1400"
   },
   "market-essentials": {
     "src": "/photos/market-essentials.jpg",
@@ -861,6 +861,6 @@
     "photographerUrl": "https://www.pexels.com/photo/34665520/",
     "position": "center 45%",
     "license": "Pexels",
-    "download": "https://images.pexels.com/photos/34665520/pexels-photo-34665520.jpeg?auto=compress&cs=tinysrgb&w=1600&q=85"
+    "download": "https://images.pexels.com/photos/34665520/pexels-photo-34665520.jpeg?auto=compress&cs=tinysrgb&w=1400"
   }
 }

@@ -8,7 +8,8 @@ import EvidenceSection from "@/components/EvidenceSection";
 import FieldworkStory from "@/components/FieldworkStory";
 import PublishedData from "@/components/PublishedData";
 import ResearchIntroduction from "@/components/ResearchIntroduction";
+import MarketResearchSection from "@/components/MarketResearchSection";
 
 export default function Home() {
-  return <><HomeHero /><ResearchIntroduction /><ServicesOverview /><FieldworkStory /><MethodologySection /><NationwideReach /><PublishedData /><EvidenceSection /><ResearchShowcase /><FaqAccordion /><ContactSection /></>;
+  return <><HomeHero /><ResearchIntroduction /><ServicesOverview /><MarketResearchSection /><FieldworkStory /><MethodologySection /><NationwideReach /><PublishedData /><EvidenceSection /><ResearchShowcase /><FaqAccordion /><ContactSection /></>;
 }

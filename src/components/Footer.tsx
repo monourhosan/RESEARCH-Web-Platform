@@ -22,6 +22,7 @@ export default function Footer() {
           <div className="footer-links">
             <span>Explore</span>
             <Link href="/services">Our expertise</Link>
+            <Link href="/services/market-research">Market &amp; customer research</Link>
             <Link href="/about">About &amp; approach</Link>
             <Link href="/projects">Research applications</Link>
             <Link href="/insights">Research &amp; perspectives</Link>

@@ -862,5 +862,67 @@
     "position": "center 45%",
     "license": "Pexels",
     "download": "https://images.pexels.com/photos/34665520/pexels-photo-34665520.jpeg?auto=compress&cs=tinysrgb&w=1400"
+  },
+  "gallery-household-survey": {
+    "src": "/photos/gallery-household-survey.jpg",
+    "alt": "A BRAC community health worker conducting a household survey in Korail, Dhaka, in 2011",
+    "title": "Household survey in Korail",
+    "credit": "Lucy Milmo / DFID",
+    "location": "Korail, Dhaka, Bangladesh",
+    "source": "https://www.flickr.com/photos/dfid/8630810827/",
+    "photographerUrl": "https://www.flickr.com/photos/dfid/",
+    "position": "center 25%",
+    "license": "CC BY 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+    "download": "https://live.staticflickr.com/8528/8630810827_4922a8b491_b.jpg"
+  },
+  "gallery-rural-field": {
+    "src": "/photos/gallery-rural-field.jpg",
+    "alt": "A farmer carrying crops and walking beside a cow in Rangpur, Bangladesh",
+    "title": "Rural livelihoods in Rangpur",
+    "credit": "masudar rahman",
+    "location": "Rangpur, Bangladesh",
+    "source": "https://www.pexels.com/photo/36726788/",
+    "photographerUrl": "https://www.pexels.com/photo/36726788/",
+    "position": "center 53%",
+    "license": "Pexels",
+    "download": "https://images.pexels.com/photos/36726788/pexels-photo-36726788.jpeg?auto=compress&cs=tinysrgb&w=1600"
+  },
+  "gallery-market-vendor": {
+    "src": "/photos/gallery-market-vendor.jpg",
+    "alt": "A vendor surrounded by goods at a market in Dhaka, Bangladesh",
+    "title": "A vendor in a Dhaka market",
+    "credit": "Tanha Tamanna Syed",
+    "location": "Dhaka, Bangladesh",
+    "source": "https://www.pexels.com/photo/36541736/",
+    "photographerUrl": "https://www.pexels.com/photo/36541736/",
+    "position": "center 15%",
+    "license": "Pexels",
+    "download": "https://images.pexels.com/photos/36541736/pexels-photo-36541736.jpeg?auto=compress&cs=tinysrgb&w=1600"
+  },
+  "gallery-road-life": {
+    "src": "/photos/gallery-road-life.jpg",
+    "alt": "Rickshaw drivers and street activity on a road in Dhaka, Bangladesh",
+    "title": "Roadside life in Dhaka",
+    "credit": "Tanha Tamanna Syed",
+    "location": "Dhaka, Bangladesh",
+    "source": "https://www.pexels.com/photo/34644868/",
+    "photographerUrl": "https://www.pexels.com/photo/34644868/",
+    "position": "center 50%",
+    "license": "Pexels",
+    "download": "https://images.pexels.com/photos/34644868/pexels-photo-34644868.jpeg?auto=compress&cs=tinysrgb&w=1600"
+  },
+  "gallery-local-shop": {
+    "src": "/photos/gallery-local-shop.jpg",
+    "alt": "A shopkeeper at work inside a shop in Dholaikhal, Dhaka, Bangladesh",
+    "title": "A shopkeeper in Dholaikhal",
+    "credit": "Md.altaf.rahman",
+    "location": "Dholaikhal, Dhaka, Bangladesh",
+    "source": "https://commons.wikimedia.org/wiki/File:A_Shopkeeper_in_DholaiKhal,_Dhaka.jpg",
+    "photographerUrl": "https://commons.wikimedia.org/wiki/User:Md.altaf.rahman",
+    "position": "center 60%",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+    "download": "https://upload.wikimedia.org/wikipedia/commons/3/3f/A_Shopkeeper_in_DholaiKhal%2C_Dhaka.jpg"
   }
 }

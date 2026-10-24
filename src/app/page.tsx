@@ -9,7 +9,8 @@ import FieldworkStory from "@/components/FieldworkStory";
 import PublishedData from "@/components/PublishedData";
 import ResearchIntroduction from "@/components/ResearchIntroduction";
 import MarketResearchSection from "@/components/MarketResearchSection";
+import FieldworkGallery from "@/components/FieldworkGallery";
 
 export default function Home() {
-  return <><HomeHero /><ResearchIntroduction /><ServicesOverview /><MarketResearchSection /><FieldworkStory /><MethodologySection /><NationwideReach /><PublishedData /><EvidenceSection /><ResearchShowcase /><FaqAccordion /><ContactSection /></>;
+  return <><HomeHero /><ResearchIntroduction /><ServicesOverview /><MarketResearchSection /><FieldworkStory /><FieldworkGallery /><MethodologySection /><NationwideReach /><PublishedData /><EvidenceSection /><ResearchShowcase /><FaqAccordion /><ContactSection /></>;
 }

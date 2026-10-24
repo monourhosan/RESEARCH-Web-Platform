@@ -31,6 +31,10 @@ export const PHOTOS = {
   "sreemangal-livelihood": photo(livelihood, "A man preparing a meal among tea gardens in Sreemangal, Bangladesh", "Everyday life in Sreemangal", "Tanha Tamanna Syed", "Sreemangal, Sylhet, Bangladesh", 35495308, "center 52%"),
 } as const;
 export type PhotoKey = keyof typeof PHOTOS;
+export function getPhotoLicenseUrl(item: { license: string; licenseUrl?: string }) {
+  if (item.licenseUrl) return item.licenseUrl;
+  return item.license === "Pexels" ? "https://www.pexels.com/license/" : "https://creativecommons.org/publicdomain/zero/1.0/";
+}
 export const GUIDE_PHOTOS: PhotoKey[] = ["dhaka-street", "wp-62440", "wp-60213"];
 
 export const ARTICLE_COVERS: PhotoKey[] = ["wp-76327", "wp-76584", "wp-33979"];

@@ -4,6 +4,7 @@ import localFont from "next/font/local";
 import SiteShell from "@/components/SiteShell";
 import "./globals.css";
 import "./reference-theme.css";
+import "./photography.css";
 
 const displayFont = localFont({ src: "./fonts/bricolage-grotesque-latin.woff2", variable: "--font-display", weight: "400 700", display: "swap", preload: false });
 const bodyFont = localFont({ src: "./fonts/source-sans-3-latin.woff2", variable: "--font-body", weight: "200 900", display: "swap" });
@@ -20,5 +21,5 @@ export const metadata: Metadata = {
 };
 export const viewport: Viewport = { themeColor: "#003f34", width: "device-width", initialScale: 1 };
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
-  return <html lang="en" className={`${displayFont.variable} ${bodyFont.variable} ${noteFont.variable}`}><body><Suspense fallback={<main>{children}</main>}><SiteShell>{children}</SiteShell></Suspense></body></html>;
+  return <html lang="en" data-scroll-behavior="smooth" className={`${displayFont.variable} ${bodyFont.variable} ${noteFont.variable}`}><body><Suspense fallback={<main>{children}</main>}><SiteShell>{children}</SiteShell></Suspense></body></html>;
 }

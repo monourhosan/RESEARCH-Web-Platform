@@ -1,0 +1,387 @@
+{
+  "retrievedAt": "2026-10-24",
+  "country": "Bangladesh",
+  "countryCode": "BGD",
+  "indicators": [
+    {
+      "code": "IT.NET.USER.ZS",
+      "apiUrl": "https://api.worldbank.org/v2/country/BGD/indicator/IT.NET.USER.ZS?date=2015:2025&format=json&per_page=100",
+      "metadata": {
+        "page": 1,
+        "pages": 1,
+        "per_page": 100,
+        "total": 11,
+        "sourceid": "2",
+        "lastupdated": "2026-10-08"
+      },
+      "data": [
+        {
+          "indicator": {
+            "id": "IT.NET.USER.ZS",
+            "value": "Individuals using the Internet (% of population)"
+          },
+          "country": {
+            "id": "BD",
+            "value": "Bangladesh"
+          },
+          "countryiso3code": "BGD",
+          "date": "2025",
+          "value": null,
+          "unit": "",
+          "obs_status": "",
+          "decimal": 0
+        },
+        {
+          "indicator": {
+            "id": "IT.NET.USER.ZS",
+            "value": "Individuals using the Internet (% of population)"
+          },
+          "country": {
+            "id": "BD",
+            "value": "Bangladesh"
+          },
+          "countryiso3code": "BGD",
+          "date": "2024",
+          "value": 53.42171316,
+          "unit": "",
+          "obs_status": "",
+          "decimal": 0
+        },
+        {
+          "indicator": {
+            "id": "IT.NET.USER.ZS",
+            "value": "Individuals using the Internet (% of population)"
+          },
+          "country": {
+            "id": "BD",
+            "value": "Bangladesh"
+          },
+          "countryiso3code": "BGD",
+          "date": "2023",
+          "value": 44.50274195,
+          "unit": "",
+          "obs_status": "",
+          "decimal": 0
+        },
+        {
+          "indicator": {
+            "id": "IT.NET.USER.ZS",
+            "value": "Individuals using the Internet (% of population)"
+          },
+          "country": {
+            "id": "BD",
+            "value": "Bangladesh"
+          },
+          "countryiso3code": "BGD",
+          "date": "2022",
+          "value": 41.61650085,
+          "unit": "",
+          "obs_status": "",
+          "decimal": 0
+        },
+        {
+          "indicator": {
+            "id": "IT.NET.USER.ZS",
+            "value": "Individuals using the Internet (% of population)"
+          },
+          "country": {
+            "id": "BD",
+            "value": "Bangladesh"
+          },
+          "countryiso3code": "BGD",
+          "date": "2021",
+          "value": 38.91744466,
+          "unit": "",
+          "obs_status": "",
+          "decimal": 0
+        },
+        {
+          "indicator": {
+            "id": "IT.NET.USER.ZS",
+            "value": "Individuals using the Internet (% of population)"
+          },
+          "country": {
+            "id": "BD",
+            "value": "Bangladesh"
+          },
+          "countryiso3code": "BGD",
+          "date": "2020",
+          "value": 36.10910034,
+          "unit": "",
+          "obs_status": "",
+          "decimal": 0
+        },
+        {
+          "indicator": {
+            "id": "IT.NET.USER.ZS",
+            "value": "Individuals using the Internet (% of population)"
+          },
+          "country": {
+            "id": "BD",
+            "value": "Bangladesh"
+          },
+          "countryiso3code": "BGD",
+          "date": "2019",
+          "value": 30.38310051,
+          "unit": "",
+          "obs_status": "",
+          "decimal": 0
+        },
+        {
+          "indicator": {
+            "id": "IT.NET.USER.ZS",
+            "value": "Individuals using the Internet (% of population)"
+          },
+          "country": {
+            "id": "BD",
+            "value": "Bangladesh"
+          },
+          "countryiso3code": "BGD",
+          "date": "2018",
+          "value": 25.56509972,
+          "unit": "",
+          "obs_status": "",
+          "decimal": 0
+        },
+        {
+          "indicator": {
+            "id": "IT.NET.USER.ZS",
+            "value": "Individuals using the Internet (% of population)"
+          },
+          "country": {
+            "id": "BD",
+            "value": "Bangladesh"
+          },
+          "countryiso3code": "BGD",
+          "date": "2017",
+          "value": 21.5,
+          "unit": "",
+          "obs_status": "",
+          "decimal": 0
+        },
+        {
+          "indicator": {
+            "id": "IT.NET.USER.ZS",
+            "value": "Individuals using the Internet (% of population)"
+          },
+          "country": {
+            "id": "BD",
+            "value": "Bangladesh"
+          },
+          "countryiso3code": "BGD",
+          "date": "2016",
+          "value": 16.89909935,
+          "unit": "",
+          "obs_status": "",
+          "decimal": 0
+        },
+        {
+          "indicator": {
+            "id": "IT.NET.USER.ZS",
+            "value": "Individuals using the Internet (% of population)"
+          },
+          "country": {
+            "id": "BD",
+            "value": "Bangladesh"
+          },
+          "countryiso3code": "BGD",
+          "date": "2015",
+          "value": 12.36880016,
+          "unit": "",
+          "obs_status": "",
+          "decimal": 0
+        }
+      ]
+    },
+    {
+      "code": "SP.URB.TOTL.IN.ZS",
+      "apiUrl": "https://api.worldbank.org/v2/country/BGD/indicator/SP.URB.TOTL.IN.ZS?date=2015:2025&format=json&per_page=100",
+      "metadata": {
+        "page": 1,
+        "pages": 1,
+        "per_page": 100,
+        "total": 11,
+        "sourceid": "2",
+        "lastupdated": "2026-10-08"
+      },
+      "data": [
+        {
+          "indicator": {
+            "id": "SP.URB.TOTL.IN.ZS",
+            "value": "Urban population (% of total population)"
+          },
+          "country": {
+            "id": "BD",
+            "value": "Bangladesh"
+          },
+          "countryiso3code": "BGD",
+          "date": "2025",
+          "value": 33.2395847043975,
+          "unit": "",
+          "obs_status": "",
+          "decimal": 0
+        },
+        {
+          "indicator": {
+            "id": "SP.URB.TOTL.IN.ZS",
+            "value": "Urban population (% of total population)"
+          },
+          "country": {
+            "id": "BD",
+            "value": "Bangladesh"
+          },
+          "countryiso3code": "BGD",
+          "date": "2024",
+          "value": 32.6783196323307,
+          "unit": "",
+          "obs_status": "",
+          "decimal": 0
+        },
+        {
+          "indicator": {
+            "id": "SP.URB.TOTL.IN.ZS",
+            "value": "Urban population (% of total population)"
+          },
+          "country": {
+            "id": "BD",
+            "value": "Bangladesh"
+          },
+          "countryiso3code": "BGD",
+          "date": "2023",
+          "value": 32.1578465036834,
+          "unit": "",
+          "obs_status": "",
+          "decimal": 0
+        },
+        {
+          "indicator": {
+            "id": "SP.URB.TOTL.IN.ZS",
+            "value": "Urban population (% of total population)"
+          },
+          "country": {
+            "id": "BD",
+            "value": "Bangladesh"
+          },
+          "countryiso3code": "BGD",
+          "date": "2022",
+          "value": 31.673734726234,
+          "unit": "",
+          "obs_status": "",
+          "decimal": 0
+        },
+        {
+          "indicator": {
+            "id": "SP.URB.TOTL.IN.ZS",
+            "value": "Urban population (% of total population)"
+          },
+          "country": {
+            "id": "BD",
+            "value": "Bangladesh"
+          },
+          "countryiso3code": "BGD",
+          "date": "2021",
+          "value": 31.3992156886061,
+          "unit": "",
+          "obs_status": "",
+          "decimal": 0
+        },
+        {
+          "indicator": {
+            "id": "SP.URB.TOTL.IN.ZS",
+            "value": "Urban population (% of total population)"
+          },
+          "country": {
+            "id": "BD",
+            "value": "Bangladesh"
+          },
+          "countryiso3code": "BGD",
+          "date": "2020",
+          "value": 31.1168927321524,
+          "unit": "",
+          "obs_status": "",
+          "decimal": 0
+        },
+        {
+          "indicator": {
+            "id": "SP.URB.TOTL.IN.ZS",
+            "value": "Urban population (% of total population)"
+          },
+          "country": {
+            "id": "BD",
+            "value": "Bangladesh"
+          },
+          "countryiso3code": "BGD",
+          "date": "2019",
+          "value": 30.8228396343012,
+          "unit": "",
+          "obs_status": "",
+          "decimal": 0
+        },
+        {
+          "indicator": {
+            "id": "SP.URB.TOTL.IN.ZS",
+            "value": "Urban population (% of total population)"
+          },
+          "country": {
+            "id": "BD",
+            "value": "Bangladesh"
+          },
+          "countryiso3code": "BGD",
+          "date": "2018",
+          "value": 30.5175656009959,
+          "unit": "",
+          "obs_status": "",
+          "decimal": 0
+        },
+        {
+          "indicator": {
+            "id": "SP.URB.TOTL.IN.ZS",
+            "value": "Urban population (% of total population)"
+          },
+          "country": {
+            "id": "BD",
+            "value": "Bangladesh"
+          },
+          "countryiso3code": "BGD",
+          "date": "2017",
+          "value": 30.2015798381799,
+          "unit": "",
+          "obs_status": "",
+          "decimal": 0
+        },
+        {
+          "indicator": {
+            "id": "SP.URB.TOTL.IN.ZS",
+            "value": "Urban population (% of total population)"
+          },
+          "country": {
+            "id": "BD",
+            "value": "Bangladesh"
+          },
+          "countryiso3code": "BGD",
+          "date": "2016",
+          "value": 29.8753915517965,
+          "unit": "",
+          "obs_status": "",
+          "decimal": 0
+        },
+        {
+          "indicator": {
+            "id": "SP.URB.TOTL.IN.ZS",
+            "value": "Urban population (% of total population)"
+          },
+          "country": {
+            "id": "BD",
+            "value": "Bangladesh"
+          },
+          "countryiso3code": "BGD",
+          "date": "2015",
+          "value": 29.5395099477892,
+          "unit": "",
+          "obs_status": "",
+          "decimal": 0
+        }
+      ]
+    }
+  ]
+}

@@ -1,16 +1,15 @@
 "use client";
 
-import { ArrowRight, Check } from "lucide-react";
-import { CommunityMark, MarketMark, FieldworkMark } from "./ResearchMarks";
-import Image from "next/image";
-import survey from "../../public/illustrations/household-survey.png";
-import group from "../../public/illustrations/group-discussion.png";
+import { ArrowRight, Check, UsersRound, ChartColumn, ClipboardCheck } from "lucide-react";
+import ResearchPhoto from "./ResearchPhoto";
+import type { PhotoKey } from "@/data/photography";
 
 const services = [
-  { Icon: CommunityMark, title: "Social & development research", description: "Understand what a program means for the people it serves, and where there is room to do more.", capabilities: ["Baseline, midline & endline studies", "Program & impact evaluation", "Community & livelihood research"], action: "Plan a social research study" },
-  { Icon: MarketMark, title: "Market & consumer research", description: "Get to know the choices, habits, and everyday realities that shape your market.", capabilities: ["Consumer behavior & brand research", "Market sizing & retail studies", "Product & concept testing"], action: "Explore your market questions" },
-  { Icon: FieldworkMark, title: "Fieldwork & data collection", description: "Bring a thoughtful study into the field, with the right tools and careful checks along the way.", capabilities: ["Digital surveys & field interviews", "Focus groups & in-depth conversations", "Supervision & quality review"], action: "Talk through your fieldwork" },
+  { Icon: UsersRound, title: "Social & development research", description: "Understand what a program means for the people it serves, and where there is room to do more.", capabilities: ["Baseline, midline & endline studies", "Program & impact evaluation", "Community & livelihood research"], action: "Plan a social research study" },
+  { Icon: ChartColumn, title: "Market & consumer research", description: "Get to know the choices, habits, and everyday realities that shape your market.", capabilities: ["Consumer behavior & brand research", "Market sizing & retail studies", "Product & concept testing"], action: "Explore your market questions" },
+  { Icon: ClipboardCheck, title: "Fieldwork & data collection", description: "Bring a thoughtful study into the field, with the right tools and careful checks along the way.", capabilities: ["Digital surveys & field interviews", "Focus groups & in-depth conversations", "Supervision & quality review"], action: "Talk through your fieldwork" },
 ];
+const servicePhotos: PhotoKey[] = ["dhaka-community", "dhaka-market", "rangpur-community"];
 
 export default function CorePillars({ onOpenProposalModal }: { onOpenProposalModal: () => void }) {
   return (
@@ -20,9 +19,7 @@ export default function CorePillars({ onOpenProposalModal }: { onOpenProposalMod
         <div className="services-grid">
           {services.map(({ Icon, title, description, capabilities, action }, index) => (
             <article className="service-card" key={title}>
-              <div className={`service-visual service-visual-${index}`} aria-hidden="true">
-                {index === 1 ? <><MarketMark className="market-visual-mark" /><span className="handwritten">People. Choices. Context.</span></> : <Image src={index === 0 ? survey : group} alt="" sizes="(max-width: 767px) 90vw, 30vw" />}
-              </div>
+              <ResearchPhoto photo={servicePhotos[index]} className={`service-visual service-visual-${index}`} sizes="(max-width: 767px) 90vw, (max-width: 1023px) 45vw, 30vw" />
               <div className="service-card-body"><Icon className="service-drawing" /><h3>{title}</h3><p className="service-description">{description}</p><ul className="service-capabilities">{capabilities.map(capability => <li key={capability}><Check size={15} /><span>{capability}</span></li>)}</ul><button type="button" className="service-link" onClick={onOpenProposalModal}>{action}<ArrowRight size={17} /></button></div>
             </article>
           ))}

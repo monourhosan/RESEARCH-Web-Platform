@@ -1,3 +1,4 @@
+import ResearchPhoto from "@/components/ResearchPhoto";
 import { ArrowUpRight, ArrowUp } from "lucide-react";
 import Logo from "./Logo";
 import Link from "next/link";
@@ -16,7 +17,7 @@ export default function Footer() {
               <br />
               and market insights.
             </p>
-            <span>Social &amp; market research in Bangladesh</span>
+            <span>Social &amp; market research in Bangladesh</span><ResearchPhoto photo="bangladesh-river" className="footer-photo" sizes="(max-width: 767px) 80vw, 30vw" />
           </div>
           <div className="footer-links">
             <span>Explore</span>
@@ -25,7 +26,7 @@ export default function Footer() {
             <Link href="/projects">Research applications</Link>
             <Link href="/insights">Research &amp; perspectives</Link>
             <Link href="/contact#faqs">FAQs</Link>
-            <Link href="/privacy">Privacy notice</Link>
+            <Link href="/privacy">Privacy notice</Link><Link href="/photography">Photography &amp; credits</Link>
           </div>
           <div className="footer-contact">
             <span>Let’s connect</span>

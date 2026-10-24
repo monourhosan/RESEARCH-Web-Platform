@@ -2,13 +2,13 @@
 
 import Image from "next/image";
 import { ArrowDown, ArrowUpRight, MapPin } from "lucide-react";
-import conversation from "../../public/illustrations/research-conversation-editorial.png";
+import { PHOTOS } from "@/data/photography";
 
 export default function Hero({ onOpenProposalModal }: { onOpenProposalModal: () => void }) {
   return (
     <section id="home" className="hero-section">
       <div className="hero-stage">
-        <div className="hero-image-layer"><Image src={conversation} alt="Illustrative scene of a researcher listening to a community member in a leafy Bangladesh courtyard" fill sizes="100vw" loading="eager" fetchPriority="high" className="hero-editorial-image" /></div>
+        <div className="hero-image-layer" data-photo="rangpur-farming"><Image src={PHOTOS["rangpur-farming"].src} alt={PHOTOS["rangpur-farming"].alt} fill sizes="100vw" loading="eager" fetchPriority="high" className="hero-editorial-image" /></div>
         <div className="hero-shade" aria-hidden="true" />
       <div className="site-container hero-layout">
         <div className="hero-copy">
@@ -16,7 +16,7 @@ export default function Hero({ onOpenProposalModal }: { onOpenProposalModal: () 
           <h1>Good research begins with people.</h1>
         </div>
         <div className="hero-bottom">
-          <div className="hero-context"><p className="hero-location"><MapPin size={15} strokeWidth={1.5} /> Rooted in Bangladesh.<br />Informed by people.</p><p className="hero-art-credit">AI-created editorial illustration</p></div>
+          <div className="hero-context"><p className="hero-location"><MapPin size={15} strokeWidth={1.5} /> Rooted in Bangladesh.<br />Informed by people.</p><a className="hero-art-credit" href="/photography">Pirganj, Bangladesh · masudar rahman / Pexels</a></div>
           <div className="hero-summary">
           <p className="hero-description">Understand communities. Get closer to your customers. Make decisions with thoughtful social and market research.</p>
           <div className="hero-actions">

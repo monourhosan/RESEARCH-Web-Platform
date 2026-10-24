@@ -87,3 +87,9 @@ Chart highlights support mouse hover, keyboard focus, and taps. Cards, buttons, 
 ## Regional galleries
 
 `NationwideReach.tsx` provides eight selectable regional profiles. Each has its own introduction, three research planning questions, and two photographs from that division (16 distinct regional photographs). `src/data/regionalContext.ts` owns the copy and photo allocation. The language panel has been removed. Other content placements also have separate photographs; shared components retain their assigned photo when shown on another route. Research notes each have an individual header and five distinct section images. The credits page lists source links without reproducing the images. Added photographs come from the WordPress Photo Directory under CC0; their original source and download URLs are preserved in the registry.
+
+## Market and customer research
+
+The homepage includes `MarketResearchSection.tsx`, with an interactive six-topic study explorer. `/services/market-research` provides detailed service writing, customer journey visualization, applications for six organization types, a five-stage process, deliverables, and native disclosure FAQs. Content lives in `src/data/marketResearch.ts`. Examples are study designs rather than client findings or numerical survey results. The existing published national data section is retained.
+
+Eight new, separately allocated photographs of markets and retailers in Dhaka are registered with Pexels credits and source URLs in `src/data/additionalPhotos.json`. The market service card, homepage feature, footer, and sitemap link to the new page. `/downloads/market-research-planning-matrix.csv` contains the six study outlines for preparing a brief. Inquiry delivery behavior remains governed by the existing provider configuration.

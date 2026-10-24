@@ -31,3 +31,6 @@ Check all public routes at desktop and mobile widths. Inspect every visible `mai
 
 
 Regional update: each of the eight divisions has two individually allocated, location-documented photographs and unique research planning copy, maintained in `src/data/regionalContext.ts`. The language panel is removed. New CC0 sources and photographer links are recorded in `src/data/additionalPhotos.json`; images are stored locally and optimized by Next.js. Each content placement has its own photograph. Reused shared components keep the same photo for the same content on different routes. The photography credits index is text-only to avoid repeating the images.
+
+
+Market research expansion: eight new Pexels photographs document real retail and market contexts in Dhaka. Each new content section uses its own image, with original source links in the public credits. The homepage research canvas uses Source Sans 3 and the existing forest, cream, stone, and sage palette. Its evidence-flow graphic and the detailed page’s customer journey describe possible study designs; they do not display fabricated measurements or client results.

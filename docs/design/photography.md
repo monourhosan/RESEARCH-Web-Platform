@@ -28,3 +28,6 @@ The raw API response is archived in `src/data/sources/world-bank-bangladesh-2026
 ## Verification requirements
 
 Check all public routes at desktop and mobile widths. Inspect every visible `main section` for a loaded image from the photography collection, verify crops and text contrast, and confirm there are no live illustration requests. Preserve keyboard navigation, dialogs, inquiry validation, research filters, and reduced-motion behavior.
+
+
+Regional update: each of the eight divisions has two individually allocated, location-documented photographs and unique research planning copy, maintained in `src/data/regionalContext.ts`. The language panel is removed. New CC0 sources and photographer links are recorded in `src/data/additionalPhotos.json`; images are stored locally and optimized by Next.js. Each content placement has its own photograph. Reused shared components keep the same photo for the same content on different routes. The photography credits index is text-only to avoid repeating the images.

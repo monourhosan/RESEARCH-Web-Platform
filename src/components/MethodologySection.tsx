@@ -15,7 +15,7 @@ const phases = [
 export default function MethodologySection() {
   const [activeIndex, setActiveIndex] = useState(0);
   const step = METHODOLOGY_STEPS[activeIndex];
-  const phasePhotos = ["bangladesh-learning", "rangpur-community", "sreemangal-livelihood", "dhaka-skyline"] as const;
+  const phasePhotos = ["wp-65076", "wp-78919", "wp-32191", "wp-32203"] as const;
   return (
     <section id="methodology" className="section-space approach-section">
       <div className="site-container">

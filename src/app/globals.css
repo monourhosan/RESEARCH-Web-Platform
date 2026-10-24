@@ -172,10 +172,6 @@ dialog::backdrop { background: #20323f65; backdrop-filter: blur(4px); }
 .division-specialties .eyebrow { margin-bottom: 14px; }
 .division-specialties > p:not(.eyebrow) { display: flex; align-items: flex-start; gap: 9px; font-size: 14px; line-height: 1.6; margin-top: 12px; }
 .division-specialties svg { color: var(--teal); flex-shrink: 0; margin-top: 3px; }
-.division-languages { display: flex; gap: 12px; padding: 17px; margin-top: 25px; background: #f2f7fa; border-radius: 7px; }
-.division-languages > svg { flex-shrink: 0; color: var(--blue); margin-top: 3px; }
-.division-languages strong { font-size: 13px; font-weight: 600; }
-.division-languages p { font-size: 13px; color: var(--muted); margin-top: 5px; line-height: 1.7; }
 .division-cta { display: flex; align-items: center; justify-content: space-between; gap: 12px; margin-top: 23px; color: var(--blue); font-size: 14px; font-weight: 600; }
 
 /* Useful reading and downloadable resources. */

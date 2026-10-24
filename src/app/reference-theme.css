@@ -133,7 +133,6 @@ dialog::backdrop { background: #002f2a75; }
 .division-selector button:hover:not([aria-pressed="true"]) { background: #d5decc; }
 .division-card { background: #f7f8f1; border-color: transparent; border-radius: 12px; }
 .division-card h3 { font-size: 49px; }
-.division-languages { background: #e7eddf; }
 
 .data-section { background: #f5f8f4; border: 0; }
 .data-workbook { border-color: #c3d0c1; box-shadow: none; background: #fffefa; }

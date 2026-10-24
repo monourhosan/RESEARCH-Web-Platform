@@ -9,7 +9,7 @@ const services = [
   { Icon: ChartColumn, title: "Market & consumer research", description: "Get to know the choices, habits, and everyday realities that shape your market.", capabilities: ["Consumer behavior & brand research", "Market sizing & retail studies", "Product & concept testing"], action: "Explore your market questions" },
   { Icon: ClipboardCheck, title: "Fieldwork & data collection", description: "Bring a thoughtful study into the field, with the right tools and careful checks along the way.", capabilities: ["Digital surveys & field interviews", "Focus groups & in-depth conversations", "Supervision & quality review"], action: "Talk through your fieldwork" },
 ];
-const servicePhotos: PhotoKey[] = ["dhaka-community", "dhaka-market", "rangpur-community"];
+const servicePhotos: PhotoKey[] = ["bangladesh-learning", "dhaka-market", "wp-82584"];
 
 export default function CorePillars({ onOpenProposalModal }: { onOpenProposalModal: () => void }) {
   return (

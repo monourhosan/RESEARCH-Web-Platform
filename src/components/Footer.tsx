@@ -17,7 +17,7 @@ export default function Footer() {
               <br />
               and market insights.
             </p>
-            <span>Social &amp; market research in Bangladesh</span><ResearchPhoto photo="bangladesh-river" className="footer-photo" sizes="(max-width: 767px) 80vw, 30vw" />
+            <span>Social &amp; market research in Bangladesh</span><ResearchPhoto photo="wp-21200" className="footer-photo" sizes="(max-width: 767px) 80vw, 30vw" />
           </div>
           <div className="footer-links">
             <span>Explore</span>

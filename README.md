@@ -68,7 +68,7 @@ The backend caps request bodies at 16 KB, checks origin and content type, valida
 
 ## Photography and design history
 
-The website now uses actual stock photographs taken in Bangladesh throughout the homepage, dedicated pages, and research notes. The ten local JPG assets are in `public/photos`; `src/data/photography.ts` records their sources, credits, and verified locations. `/photography` provides public credits and explains the photographs' contextual use. The people shown are not presented as Mirror Metrics staff, clients, or participants. Next.js Image provides responsive image optimization; the hero loads eagerly and supporting images load lazily.
+The website now uses actual stock photographs taken in Bangladesh throughout the homepage, dedicated pages, and research notes. The local assets are in `public/photos`; `src/data/photography.ts` and `src/data/additionalPhotos.json` record their sources, credits, licenses, and documented locations. `/photography` provides public credits and explains the photographs' contextual use. The people shown are not presented as Mirror Metrics staff, clients, or participants. Next.js Image provides responsive image optimization; the hero loads eagerly and supporting images load lazily.
 
 `docs/design/photography.md` records the current direction and data sources. Earlier drawing and generated assets remain in `public/illustrations` as design history, but live pages do not import them. Earlier decisions and prompts remain in `docs/design/direction.md`, `reference-direction.md`, and `illustration-prompts.md`. Font source and licensing notes are in `src/app/fonts/README.md`.
 
@@ -83,3 +83,7 @@ Chart highlights support mouse hover, keyboard focus, and taps. Cards, buttons, 
 ## Reference-led green editorial redesign
 
 `src/app/reference-theme.css` adapts the supplied visual reference with a framed canvas, forest green and cream sections, light sans-serif headings, and pill controls. `src/app/photography.css` arranges real Bangladesh photographs throughout that design. The hero now uses `public/photos/rangpur-farming.jpg`, photographed in Pirganj by masudar rahman. The theme applies across dedicated pages and preserves inquiry delivery behavior.
+
+## Regional galleries
+
+`NationwideReach.tsx` provides eight selectable regional profiles. Each has its own introduction, three research planning questions, and two photographs from that division (16 distinct regional photographs). `src/data/regionalContext.ts` owns the copy and photo allocation. The language panel has been removed. Other content placements also have separate photographs; shared components retain their assigned photo when shown on another route. Research notes each have an individual header and five distinct section images. The credits page lists source links without reproducing the images. Added photographs come from the WordPress Photo Directory under CC0; their original source and download URLs are preserved in the registry.

@@ -137,3 +137,48 @@
 @media (max-width: 359px) {
   .hero-copy h1 { font-size: 46px; }
 }
+/* Regional field notes: two distinct, locally sourced photographs per division. */
+.reach-layout { grid-template-columns: .8fr 1.2fr; gap: 65px; }
+.reach-intro h2 { max-width: 430px; }
+.reach-select-label { margin-top: 35px; }
+.reach-intro > .reach-planning-note { font-size: 14px !important; line-height: 1.7 !important; margin-top: 26px !important; padding-top: 22px; border-top: 1px solid #becbb8; }
+.division-card { padding: 28px; }
+.division-card-top { padding-bottom: 17px; }
+.division-title { display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between; gap: 8px 20px; margin: 19px 0 23px; }
+.division-title h3 { margin: 0; font-size: 46px; }
+.division-bengali { font-size: 16px; }
+.division-gallery { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+.division-photo { min-width: 0; }
+.division-photo .photo-frame { aspect-ratio: 1.23; border-radius: 6px; }
+.division-photo figcaption { font-size: 12px; line-height: 1.45; margin-top: 10px; }
+.division-photo figcaption span, .division-photo figcaption a { display: block; }
+.division-photo figcaption span { color: var(--ink); }
+.division-photo figcaption a { font-size: 10px; margin-top: 3px; text-decoration: underline; text-underline-offset: 3px; }
+.division-headline { font-size: 28px; line-height: 1.15; margin-top: 28px; }
+.division-description { font-size: 15px; line-height: 1.75; color: var(--muted); margin-top: 12px; }
+.division-specialties { margin-top: 22px; padding-top: 20px; }
+.division-specialties ul { padding-left: 18px; list-style: disc; }
+.division-specialties li { padding-left: 4px; margin-top: 9px; font-size: 14px; line-height: 1.6; }
+.division-specialties li::marker { color: #6f8970; }
+.division-cta { border-top: 1px solid var(--line); padding-top: 20px; }
+.photography-grid article { border-top: 1px solid var(--line); padding-top: 18px; }
+.photography-grid h3 { font-size: 22px; margin-top: 0; }
+@media (max-width: 1023px) {
+  .reach-layout { grid-template-columns: .8fr 1.2fr; gap: 30px; }
+  .division-card { padding: 23px; }
+}
+@media (max-width: 767px) {
+  .reach-layout { grid-template-columns: 1fr; gap: 30px; }
+  .reach-intro h2 { max-width: none; }
+  .division-selector { grid-template-columns: 1fr 1fr; }
+  .division-selector button { justify-content: space-between; }
+  .division-selector button svg { display: block; }
+  .division-card { padding: 22px; }
+  .division-title h3 { font-size: 39px; }
+  .division-headline { font-size: 27px; }
+  .division-gallery { gap: 12px; }
+}
+@media (max-width: 359px) {
+  .division-card { padding: 17px; }
+  .division-gallery { gap: 9px; }
+}

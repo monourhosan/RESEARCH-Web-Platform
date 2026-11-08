@@ -11,7 +11,7 @@ export default function Footer() {
             <Link href="/" aria-label="Mirror Metrics home">
               <Logo variant="light" size="md" emblemSrc="accent" />
             </Link>
-            <span>Social &amp; market research in Bangladesh</span>
+            <span>Market &amp; customer research in Bangladesh</span>
           </div>
           <div className="footer-links">
             <span>Explore</span>

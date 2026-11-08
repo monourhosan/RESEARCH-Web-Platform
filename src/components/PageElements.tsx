@@ -10,5 +10,5 @@ export function PageIntro({ label, title, accent, description }: { label: string
 }
 
 export function PageCta() {
-  return <section className="page-cta"><div className="site-container"><div><p className="handwritten">What are you curious about?</p><h2>Let’s find out, together.</h2></div><ResearchPhoto photo="wp-18079" className="cta-photo" /><div><ProposalButton /><Link href="/contact" className="text-link">Contact the team <ArrowUpRight size={16} /></Link></div></div></section>;
+  return <section className="page-cta"><div className="site-container"><div><p className="handwritten">Your next decision starts with a question.</p><h2>Let’s put evidence behind it.</h2></div><ResearchPhoto photo="wp-18079" className="cta-photo" /><div><ProposalButton /><Link href="/contact" className="text-link">Contact the team <ArrowUpRight size={16} /></Link></div></div></section>;
 }

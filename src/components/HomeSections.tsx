@@ -3,6 +3,7 @@
 import { useProposal } from "./SiteShell";
 import Hero from "./Hero";
 import CorePillars from "./CorePillars";
+import MarketServices from "./MarketServices";
 
 export function HomeHero() {
   const open = useProposal();
@@ -10,5 +11,5 @@ export function HomeHero() {
 }
 export function ServicesOverview({ compact = false }: { compact?: boolean }) {
   const open = useProposal();
-  return <CorePillars onOpenProposalModal={open} compact={compact} />;
+  return compact ? <MarketServices /> : <CorePillars onOpenProposalModal={open} />;
 }

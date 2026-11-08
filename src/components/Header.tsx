@@ -7,7 +7,7 @@ import { ArrowUpRight, Menu, X, MapPin } from "lucide-react";
 import Logo from "./Logo";
 
 const links = [
-  { label: "Services", href: "/services" },
+  { label: "Expertise", href: "/services" },
   { label: "About us", href: "/about" },
   { label: "Our work", href: "/projects" },
   { label: "Insights", href: "/insights" },

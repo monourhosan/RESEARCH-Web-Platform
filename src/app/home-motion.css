@@ -1,0 +1,28 @@
+/* Decorative motion only: text stays visible without JavaScript. */
+.market-section-actions { display: flex; align-items: center; gap: 18px; }
+.home-motion-toggle { display: inline-flex; align-items: center; justify-content: center; width: 44px; height: 44px; border: 1px solid var(--line); border-radius: 50%; color: #496b7c; background: #fff; }
+.home-motion-toggle:hover { background: #eef5f5; border-color: #a0c4c3; }
+.home-motion-toggle:disabled { opacity: .5; cursor: default; }
+.home-motion :is(.market-service-card, .bangladesh-settings article, .bangladesh-research-heading)[data-entered="true"] { animation: home-section-reveal 600ms cubic-bezier(.2,.7,.25,1) both; }
+.home-motion .market-service-card:nth-child(2) { animation-delay: 80ms; }
+.home-motion .market-service-card:nth-child(3) { animation-delay: 160ms; }
+.home-motion .bangladesh-settings article:nth-child(2) { animation-delay: 100ms; }
+@keyframes home-section-reveal { from { opacity: .65; translate: 0 8px; } to { opacity: 1; translate: 0 0; } }
+.home-motion .market-service-top > svg { animation: service-icon-breathe 5s ease-in-out infinite; animation-play-state: paused; }
+.home-motion .market-service-card:nth-child(2) .market-service-top > svg { animation-delay: 700ms; }
+.home-motion .market-service-card:nth-child(3) .market-service-top > svg { animation-delay: 1400ms; }
+.home-motion .market-service-grid[data-in-view="true"] .market-service-top > svg { animation-play-state: running; }
+@keyframes service-icon-breathe { 0%, 70%, 100% { opacity: 1; transform: translateY(0); } 35% { opacity: .65; transform: translateY(-2px); } }
+.home-motion .bangladesh-research-steps li { position: relative; }
+.home-motion .bangladesh-research-steps li::before { content: ""; position: absolute; top: -1px; left: 0; height: 2px; width: 100%; background: #007f80; transform: scaleX(0); transform-origin: left; animation: research-step-progress 8s linear infinite; animation-play-state: paused; pointer-events: none; }
+.home-motion .bangladesh-research-steps li:nth-child(2)::before { animation-delay: 2s; }
+.home-motion .bangladesh-research-steps li:nth-child(3)::before { animation-delay: 4s; }
+.home-motion .bangladesh-research-steps li:nth-child(4)::before { animation-delay: 6s; }
+.home-motion .bangladesh-research-steps[data-in-view="true"] li::before { animation-play-state: running; }
+@keyframes research-step-progress { 0% { transform: scaleX(0); opacity: .8; } 22% { transform: scaleX(1); opacity: .8; } 25%, 100% { transform: scaleX(1); opacity: 0; } }
+.home-motion[data-paused="true"] *, .home-motion[data-paused="true"] *::before { animation-play-state: paused !important; }
+@media (max-width: 767px) { .market-section-actions { width: 100%; justify-content: space-between; gap: 12px; } }
+@media (prefers-reduced-motion: reduce) {
+  .home-motion *, .home-motion *::before { animation: none !important; }
+  .home-motion .bangladesh-research-steps li::before { display: none; }
+}

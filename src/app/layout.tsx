@@ -11,6 +11,7 @@ import "./professional.css";
 import "./market-brand.css";
 import "./photo-backgrounds.css";
 import "./interactions.css";
+import "./home-motion.css";
 
 const displayFont = localFont({ src: "./fonts/bricolage-grotesque-latin.woff2", variable: "--font-display", weight: "400 700", display: "swap", preload: false });
 const bodyFont = localFont({ src: "./fonts/source-sans-3-latin.woff2", variable: "--font-body", weight: "200 900", display: "swap" });

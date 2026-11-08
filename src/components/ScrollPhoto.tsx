@@ -3,11 +3,13 @@
 import Image from "next/image";
 import { useEffect, useRef } from "react";
 import { PHOTOS, type PhotoKey } from "@/data/photography";
+import { useHomeMotion } from "./HomeMotion";
 
 export default function ScrollPhoto({ photo, eager = false }: { photo: PhotoKey; eager?: boolean }) {
   const frameRef = useRef<HTMLDivElement>(null);
   const layerRef = useRef<HTMLDivElement>(null);
   const item = PHOTOS[photo];
+  const { paused } = useHomeMotion();
 
   useEffect(() => {
     const frame = frameRef.current;
@@ -18,6 +20,7 @@ export default function ScrollPhoto({ photo, eager = false }: { photo: PhotoKey;
     let visible = true;
     const update = () => {
       request = 0;
+      if (paused) return;
       if (reducedMotion.matches) {
         layer.style.transform = "none";
         return;
@@ -29,7 +32,7 @@ export default function ScrollPhoto({ photo, eager = false }: { photo: PhotoKey;
       layer.style.transform = `translate3d(0, ${Math.max(-limit, Math.min(limit, offset))}px, 0)`;
     };
     const schedule = () => {
-      if (visible && !request) request = window.requestAnimationFrame(update);
+      if (!paused && visible && !request) request = window.requestAnimationFrame(update);
     };
     const observer = new IntersectionObserver(([entry]) => {
       visible = entry.isIntersecting;
@@ -47,7 +50,7 @@ export default function ScrollPhoto({ photo, eager = false }: { photo: PhotoKey;
       window.removeEventListener("resize", schedule);
       reducedMotion.removeEventListener("change", schedule);
     };
-  }, []);
+  }, [paused]);
 
   return <div ref={frameRef} className="scroll-photo" aria-hidden="true"><div ref={layerRef} className="scroll-photo-layer"><Image src={item.src} alt="" fill sizes="100vw" loading={eager ? "eager" : "lazy"} fetchPriority={eager ? "high" : "auto"} style={{ objectFit: "cover", objectPosition: item.position }} /></div></div>;
 }

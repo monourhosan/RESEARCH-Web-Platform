@@ -22,7 +22,7 @@ export const metadata: Metadata = {
   alternates: { canonical: "/" },
   openGraph: { type: "website", locale: "en_US", siteName: "Mirror Metrics Research Ltd", title: "Mirror Metrics Research Ltd", description: "Human insight. Market clarity. Meaningful impact.", images: [{ url: "/opengraph-image", width: 1200, height: 630, alt: "Mirror Metrics Research Ltd - Human insight. Market clarity. Meaningful impact." }] },
   twitter: { card: "summary_large_image", title: "Mirror Metrics Research Ltd", description: "Market & customer research in Bangladesh.", images: ["/opengraph-image"] },
-  icons: { icon: "/icon.svg", apple: "/apple-touch-icon.png" },
+  icons: { icon: "/icon.svg", apple: "/logo.png" },
 };
 export const viewport: Viewport = { themeColor: "#102b43", width: "device-width", initialScale: 1 };
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {

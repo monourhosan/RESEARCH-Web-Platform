@@ -1,17 +1,4 @@
-/* Static, crisp identity; motion is reserved for intentional interactions. */
-.brand-logo { display: inline-flex; align-items: center; gap: 10px; vertical-align: middle; color: #102b43; }
-.brand-mark { flex: 0 0 auto; display: block; }
-.brand-wordmark { display: flex; flex-direction: column; gap: 5px; }
-.brand-logo .brand-name { color: #102b43; font-family: var(--font-display), sans-serif; font-size: 18px; font-weight: 600; line-height: 1.1; letter-spacing: -.04em; }
-.brand-logo .brand-descriptor { color: #607583; font-family: var(--font-body), sans-serif; font-size: 8px; font-weight: 600; letter-spacing: .22em; line-height: 1; text-transform: uppercase; }
-.brand-logo-sm .brand-name { font-size: 16px; }
-.brand-logo-lg .brand-name { font-size: 23px; }
-.brand-logo-light .brand-name { color: #f1f6f8; }
-.brand-logo-light .brand-descriptor { color: #a9bdcd; }
-/* Override legacy span styling without changing the light/dark logo variants. */
-.is-home .site-header:not(.is-scrolled) .brand-link .brand-logo .brand-name { color: #102b43; }
-.is-home .site-header:not(.is-scrolled) .brand-link .brand-logo .brand-descriptor { color: #607583; }
-
+/* Restrained button feedback, with reduced-motion support. */
 :is(.site-shell, .proposal-dialog) :is(button, [role="button"], a.button, a.text-link, a.service-link, input[type="submit"]) {
   transition: translate 160ms cubic-bezier(.2,.7,.25,1), background-color 160ms ease, color 160ms ease, border-color 160ms ease, box-shadow 160ms ease;
 }

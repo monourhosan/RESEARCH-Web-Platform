@@ -1,4 +1,3 @@
-import ResearchPhoto from "@/components/ResearchPhoto";
 import { ArrowUpRight, ArrowUp } from "lucide-react";
 import Logo from "./Logo";
 import Link from "next/link";
@@ -10,35 +9,22 @@ export default function Footer() {
         <div className="footer-main">
           <div className="footer-brand">
             <Link href="/" aria-label="Mirror Metrics home">
-              <Logo variant="light" size="lg" emblemSrc="accent" />
+              <Logo variant="light" size="md" emblemSrc="accent" />
             </Link>
-            <p>
-              Reflecting true human
-              <br />
-              and market insights.
-            </p>
-            <span>Social &amp; market research in Bangladesh</span><ResearchPhoto photo="wp-21200" className="footer-photo" sizes="(max-width: 767px) 80vw, 30vw" />
+            <span>Social &amp; market research in Bangladesh</span>
           </div>
           <div className="footer-links">
             <span>Explore</span>
-            <Link href="/services">Our expertise</Link>
-            <Link href="/services/market-research">Market &amp; customer research</Link>
-            <Link href="/about">About &amp; approach</Link>
-            <Link href="/projects">Research applications</Link>
-            <Link href="/insights">Research &amp; perspectives</Link>
+            <Link href="/services">Services</Link>
+            <Link href="/about">About us</Link>
+            <Link href="/projects">Our work</Link>
+            <Link href="/insights">Insights</Link>
             <Link href="/contact#faqs">FAQs</Link>
             <Link href="/privacy">Privacy notice</Link><Link href="/photography">Photography &amp; credits</Link>
           </div>
           <div className="footer-contact">
             <span>Let’s connect</span>
-            <a href="mailto:inquiry@mirrormetrics.com.bd">
-              Start a conversation <ArrowUpRight size={17} />
-            </a>
-            <p>
-              Dhaka
-              <br />
-              Bangladesh
-            </p>
+            <p>Dhaka, Bangladesh</p>
             <a className="footer-email" href="mailto:inquiry@mirrormetrics.com.bd">
               inquiry@mirrormetrics.com.bd
             </a>
@@ -53,7 +39,6 @@ export default function Footer() {
         </div>
         <div className="footer-bottom">
           <p>© 2026 Mirror Metrics Research Ltd. All rights reserved.</p>
-          <span>Evidence with context. Decisions with confidence.</span>
           <a href="#main-content">
             Back to top <ArrowUp size={14} />
           </a>

@@ -8,7 +8,7 @@ export function HomeHero() {
   const open = useProposal();
   return <Hero onOpenProposalModal={open} />;
 }
-export function ServicesOverview() {
+export function ServicesOverview({ compact = false }: { compact?: boolean }) {
   const open = useProposal();
-  return <CorePillars onOpenProposalModal={open} />;
+  return <CorePillars onOpenProposalModal={open} compact={compact} />;
 }

@@ -28,6 +28,6 @@ export default function ResearchCharacter() {
       <path d="M248 164h18l-3 15h-12Z" fill="#c4d7ad" /><path d="M266 167q12-1 3 8h-5" stroke="#75976d" strokeWidth="2" />
       <path d="M58 178v-28m0 14q-20-2-17-19 17 0 17 19m0-7q19-2 17-20-17 0-17 20" stroke="#75976d" strokeWidth="3" fill="#c4d7ad" /><path d="M44 178h28l-5 23H49Z" fill="#d3b89e" />
     </svg>
-    <figcaption><span>A little curiosity goes a long way.</span><button type="button" aria-pressed={paused} onClick={() => setPaused(!paused)}>{paused ? "Play animation" : "Pause animation"}</button></figcaption>
+    <figcaption><button type="button" aria-pressed={paused} onClick={() => setPaused(!paused)}>{paused ? "Play animation" : "Pause animation"}</button></figcaption>
   </figure>;
 }

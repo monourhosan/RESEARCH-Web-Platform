@@ -26,10 +26,10 @@ h1, h2, h3, h4 { font-family: var(--font-display), sans-serif; }
 .hero-photo figcaption { font-size: 9px; }
 .market-services { background: white; }
 .market-section-heading { display: flex; align-items: end; justify-content: space-between; gap: 24px; margin-bottom: 25px; }
-.market-section-heading h2 { font-size: 32px; margin-top: 10px; }
+.market-section-heading h2 { font-size: 32px; margin-top: 0; }
 .market-section-heading .text-link { font-size: 12px; }
 .market-service-grid { display: grid; grid-template-columns: repeat(3, 1fr); border: 1px solid var(--line); border-radius: 4px; overflow: hidden; }
-.market-service-card { display: flex; flex-direction: column; min-width: 0; padding: 24px; background: white; }
+.market-service-card { display: flex; flex-direction: column; min-width: 0; padding: 30px; background: white; }
 .market-service-card + .market-service-card { border-left: 1px solid var(--line); }
 .market-service-top { display: flex; justify-content: space-between; align-items: center; color: #007f80; margin-bottom: 22px; }
 .market-service-top span { font-size: 11px; color: #7a8c99; font-variant-numeric: tabular-nums; }
@@ -37,7 +37,7 @@ h1, h2, h3, h4 { font-family: var(--font-display), sans-serif; }
 .market-service-card h3 a { display: flex; justify-content: space-between; gap: 8px; }
 .market-service-card h3 svg { flex-shrink: 0; margin-top: 4px; color: #007f80; transition: transform .2s; }
 .market-service-card h3 a:hover svg { transform: translate(2px, -2px); }
-.market-service-card p { font-size: 14px; color: var(--muted); line-height: 1.65; margin-block: 14px 22px; }
+.market-service-card p { font-size: 14px; color: var(--muted); line-height: 1.65; margin-block: 14px 0; }
 .market-service-tags { margin-top: auto; padding-top: 14px; border-top: 1px solid var(--line); color: #526a7b; font-size: 10px; }
 .market-services-foot { display: flex; flex-wrap: wrap; align-items: center; gap: 14px 28px; margin-top: 18px; font-size: 11px; color: var(--muted); }
 .market-services-foot > span::before { content: ""; display: inline-block; width: 4px; height: 4px; background: #007f80; vertical-align: middle; margin-right: 8px; }
@@ -64,7 +64,8 @@ h1, h2, h3, h4 { font-family: var(--font-display), sans-serif; }
 .service-card, .approach-detail { border-radius: 4px; }
 .approach-principle { background: #e8eff3; }
 .bangladesh-research { background: #f3f6f8; border-top: 1px solid var(--line); }
-.bangladesh-research-heading { display: grid; grid-template-columns: 1.2fr 1fr; gap: 64px; align-items: end; }
+.bangladesh-research-heading { display: grid; grid-template-columns: 1.6fr 1fr; gap: 40px; align-items: end; margin-bottom: 32px; }
+.bangladesh-research-heading > .text-link { justify-self: end; }
 .bangladesh-research-heading h2 { margin-top: 12px; font-size: 34px; }
 .bangladesh-research-heading > p { color: var(--muted); max-width: 440px; font-size: 15px; line-height: 1.7; }
 .bangladesh-research-steps { display: grid; grid-template-columns: repeat(4, 1fr); gap: 26px; list-style: none; padding: 0; margin: 32px 0; }
@@ -72,6 +73,14 @@ h1, h2, h3, h4 { font-family: var(--font-display), sans-serif; }
 .bangladesh-step-number { color: #007f80; font-size: 11px; font-weight: 600; }
 .bangladesh-research-steps h3 { margin-top: 10px; font-size: 18px; line-height: 1.3; }
 .bangladesh-research-steps p { margin-top: 10px; color: var(--muted); font-size: 13px; line-height: 1.75; }
+.is-home .market-services.section-space, .is-home .bangladesh-research.section-space { padding-block: 60px; }
+.research-photo-sources { border-top: 1px solid var(--line); padding-top: 16px; color: var(--muted); font-size: 11px; }
+.research-photo-sources summary { cursor: pointer; width: fit-content; padding-block: 5px; }
+.research-photo-sources summary:focus-visible { outline: 2px solid var(--teal); outline-offset: 4px; }
+.research-photo-sources p { margin-top: 12px; }
+.research-photo-sources ul { padding-left: 18px; margin-bottom: 0; }
+.research-photo-sources a { text-decoration: underline; text-underline-offset: 3px; }
+.research-character figcaption { justify-content: flex-end; }
 .bangladesh-settings { display: grid; grid-template-columns: 1fr 1fr; gap: 28px; }
 .bangladesh-settings article { min-width: 0; }
 .bangladesh-settings .photo-frame { aspect-ratio: 1.85; border-radius: 4px; }
@@ -93,6 +102,8 @@ h1, h2, h3, h4 { font-family: var(--font-display), sans-serif; }
 }
 @media (max-width: 767px) {
   .bangladesh-research-heading { grid-template-columns: 1fr; gap: 16px; }
+  .bangladesh-research-heading > .text-link { justify-self: start; }
+  .is-home .market-services.section-space, .is-home .bangladesh-research.section-space { padding-block: 40px; }
   .bangladesh-research-heading h2 { font-size: 29px; }
   .bangladesh-research-heading > p { font-size: 14px; }
   .bangladesh-research-steps { grid-template-columns: 1fr 1fr; gap: 24px 20px; margin-block: 26px; }

@@ -1,0 +1,43 @@
+/* Large photographic scenes with bounded scroll-driven movement. */
+.photo-hero, .photo-approach { position: relative; isolation: isolate; overflow: hidden; }
+.scroll-photo { position: absolute; inset: 0; z-index: -2; overflow: hidden; pointer-events: none; background: #102b43; }
+.scroll-photo-layer { position: absolute; inset: -80px 0; }
+.photo-hero-shade, .photo-approach-shade { position: absolute; inset: 0; z-index: -1; pointer-events: none; }
+.photo-hero-shade { background: linear-gradient(90deg, #061e31ed 0%, #061e31bd 37%, #061e3126 77%), linear-gradient(0deg, #061e31dc, transparent 36%); }
+.is-home .photo-hero { background: #102b43; color: #fff; border: 0; }
+.is-home .photo-hero .compact-hero { display: flex; align-items: center; min-height: 590px; padding-block: 72px 56px; }
+.photo-hero .hero-copy { max-width: 650px; }
+.photo-hero .hero-introduction { color: #d4e8ec; font-size: 11px; }
+.photo-hero .hero-introduction .eyebrow-dot { background: #8dd5d0; }
+.photo-hero .hero-copy h1 { color: #fff; font-size: clamp(40px, 4.4vw, 60px); }
+.photo-hero .hero-copy h1 span { color: #a4e2dc; }
+.photo-hero .hero-description { color: #e1eaf0; max-width: 410px; font-size: 17px; }
+.photo-hero .hero-actions .button-primary { background: #e7f6f2; color: #102b43; border-color: #e7f6f2; }
+.photo-hero .hero-actions .button-primary:hover { background: #fff; }
+.photo-hero .hero-actions .text-link { color: #fff; }
+.photo-hero .hero-location { color: #d2e0e9; }
+.photo-hero :is(a,button):focus-visible { outline-color: #a4e2dc; }
+.photo-hero-caption { position: relative; display: flex; justify-content: space-between; align-items: end; flex-wrap: wrap; gap: 10px 24px; padding-bottom: 24px; color: #e1eaf0; font-size: 10px; line-height: 1.7; }
+.photo-hero-caption p > span { color: #bcd0dc; }
+.photo-hero-caption a, .photo-approach-credit a { display: inline-flex; align-items: center; gap: 5px; text-decoration: underline; text-underline-offset: 3px; }
+.photo-approach { background: #102b43; }
+.photo-approach-shade { background: linear-gradient(90deg, #071e32eb, #071e32b8 55%, #071e3280), linear-gradient(0deg, #071e32bd, transparent 50%); }
+.is-home .photo-approach.section-space { padding-block: 64px 24px; }
+.photo-approach .introduction-layout { min-height: 300px; align-items: center; }
+.photo-approach .introduction-layout > div > p:not(.eyebrow) { color: #e0eaf0; }
+.photo-approach-credit { margin-top: 32px; color: #d1dfe9; font-size: 10px; line-height: 1.7; }
+@media (max-width: 767px) {
+  .is-home .photo-hero .compact-hero { min-height: 575px; padding-block: 54px 36px; }
+  .photo-hero .hero-copy h1 { font-size: clamp(36px, 9vw, 49px); }
+  .photo-hero .hero-description { font-size: 16px; }
+  .photo-hero .hero-introduction { font-size: 10px; }
+  .photo-hero-shade { background: linear-gradient(90deg, #061e31d9, #061e318a), linear-gradient(0deg, #061e31e8, #061e3126 70%); }
+  .photo-hero .scroll-photo img { object-position: 38% center !important; }
+  .photo-hero-caption { font-size: 9px; padding-bottom: 22px; }
+  .is-home .photo-approach.section-space { padding-block: 44px 24px; }
+  .photo-approach-shade { background: #071e32cf; }
+  .photo-approach .research-character { background: #eaf2f0f2; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .scroll-photo-layer { transform: none !important; }
+}

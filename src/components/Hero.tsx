@@ -1,12 +1,13 @@
 "use client";
 
-import Image from "next/image";
 import Link from "next/link";
 import { ArrowDown, ArrowUpRight, MapPin } from "lucide-react";
-import { PHOTOS } from "@/data/photography";
+import ScrollPhoto from "./ScrollPhoto";
 
 export default function Hero({ onOpenProposalModal }: { onOpenProposalModal: () => void }) {
-  return <section id="home" className="hero-section">
+  return <section id="home" className="hero-section photo-hero">
+    <ScrollPhoto photo="gallery-household-survey" eager />
+    <div className="photo-hero-shade" aria-hidden="true" />
     <div className="site-container compact-hero">
       <div className="hero-copy">
         <p className="hero-introduction"><span className="eyebrow-dot" /> Market &amp; customer research · Bangladesh</p>
@@ -15,10 +16,7 @@ export default function Hero({ onOpenProposalModal }: { onOpenProposalModal: () 
         <div className="hero-actions"><button type="button" className="button button-primary" onClick={onOpenProposalModal}>Discuss your research <ArrowUpRight size={17} /></button><a href="#services" className="text-link">Explore services <ArrowDown size={16} /></a></div>
         <p className="hero-location"><MapPin size={14} /> Based in Dhaka. Research across Bangladesh.</p>
       </div>
-      <figure className="hero-photo">
-        <div className="hero-photo-frame"><Image src={PHOTOS["dhaka-market"].src} alt={PHOTOS["dhaka-market"].alt} fill sizes="(max-width: 767px) 100vw, 45vw" loading="eager" fetchPriority="high" /><div className="market-photo-label"><span>Real people. Everyday choices.</span><strong>That’s where insight starts.</strong></div></div>
-        <figcaption><span>Markets in context · Dhaka, Bangladesh</span><Link href="/photography">Photo credits <ArrowUpRight size={12} /></Link></figcaption>
-      </figure>
     </div>
+    <div className="site-container photo-hero-caption"><p>BRAC household survey · Korail, Dhaka, 2011<br /><span>Reference photograph, not Mirror Metrics fieldwork.</span></p><Link href="/photography">Lucy Milmo / DFID · CC BY 2.0 <ArrowUpRight size={12} /></Link></div>
   </section>;
 }

@@ -9,7 +9,7 @@ export default function Footer() {
         <div className="footer-main">
           <div className="footer-brand">
             <Link href="/" aria-label="Mirror Metrics home">
-              <Logo variant="light" size="md" emblemSrc="accent" />
+              <Logo variant="light" size="md" />
             </Link>
             <span>Market &amp; customer research in Bangladesh</span>
           </div>

@@ -5,7 +5,7 @@
   padding: clamp(20px, 4vw, 44px);
   border: 1px solid var(--line);
   border-radius: 8px;
-  background: #f2f6f8;
+  background: var(--paper);
 }
 
 .controls h2 { font-size: clamp(26px, 3vw, 36px); }
@@ -17,7 +17,7 @@
   min-height: 44px;
   margin-top: 6px;
   padding: 8px 12px;
-  border: 1px solid #9bb1bf;
+  border: 1px solid #9b947d;
   border-radius: 5px;
   color: var(--ink);
   background: #fff;

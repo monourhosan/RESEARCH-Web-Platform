@@ -14,7 +14,7 @@ h1, h2, h3, h4 { letter-spacing: -.035em; font-weight: 500; }
 .button { min-height: 44px; border-radius: 6px; font-size: 14px; gap: 12px; }
 .button-primary:hover { box-shadow: 0 4px 12px #003f3414; }
 .text-link { font-size: 14px; }
-.site-header, .site-header.is-scrolled, .is-home .site-header:not(.is-scrolled) { top: 0; background: #fffaf0f5; border-bottom: 1px solid var(--line); backdrop-filter: blur(14px); box-shadow: none; }
+.site-header, .site-header.is-scrolled, .is-home .site-header:not(.is-scrolled) { top: 0; background: #fffffff5; border-bottom: 1px solid var(--line); backdrop-filter: blur(14px); box-shadow: none; }
 .header-layout { height: 76px; gap: 24px; }
 .desktop-nav { gap: 24px; }
 .desktop-nav a, .is-home .site-header:not(.is-scrolled) .desktop-nav a, .is-home .site-header:not(.is-scrolled) .menu-toggle { color: var(--ink); }

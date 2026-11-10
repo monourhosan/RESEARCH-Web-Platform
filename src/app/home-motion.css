@@ -1,7 +1,7 @@
 /* Decorative motion only: text stays visible without JavaScript. */
 .market-section-actions { display: flex; align-items: center; gap: 18px; }
-.home-motion-toggle { display: inline-flex; align-items: center; justify-content: center; width: 44px; height: 44px; border: 1px solid var(--line); border-radius: 50%; color: #546158; background: #fff; }
-.home-motion-toggle:hover { background: #f3ebda; border-color: #c9b78d; }
+.home-motion-toggle { display: inline-flex; align-items: center; justify-content: center; width: 44px; height: 44px; border: 1px solid var(--line); border-radius: 50%; color: #4e6478; background: #fff; }
+.home-motion-toggle:hover { background: #e9f6ef; border-color: #a9cfb9; }
 .home-motion-toggle:disabled { opacity: .5; cursor: default; }
 .home-motion :is(.market-service-card, .bangladesh-settings article, .bangladesh-research-heading)[data-entered="true"] { animation: home-section-reveal 600ms cubic-bezier(.2,.7,.25,1) both; }
 .home-motion .market-service-card:nth-child(2) { animation-delay: 80ms; }

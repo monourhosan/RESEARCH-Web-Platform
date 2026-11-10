@@ -1,0 +1,41 @@
+.planner {
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+  gap: clamp(24px, 5vw, 64px);
+  padding: clamp(20px, 4vw, 44px);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: #f2f6f8;
+}
+
+.controls h2 { font-size: clamp(26px, 3vw, 36px); }
+.controls > p { margin-top: 8px; color: var(--muted); }
+.controls label { display: block; margin-top: 16px; font-size: 14px; font-weight: 600; }
+.controls select {
+  display: block;
+  width: 100%;
+  min-height: 44px;
+  margin-top: 6px;
+  padding: 8px 12px;
+  border: 1px solid #9bb1bf;
+  border-radius: 5px;
+  color: var(--ink);
+  background: #fff;
+}
+
+.result {
+  min-width: 0;
+  padding: clamp(18px, 3vw, 30px);
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  background: #fff;
+}
+
+.result h3 { margin-top: 8px; font-size: 22px; }
+.result h3 ~ p { margin-top: 10px; font-size: 14px; color: var(--muted); }
+.result h3 ~ .audience, .result strong { color: var(--ink); }
+.result button { margin-top: 18px; }
+
+@media (max-width: 767px) {
+  .planner { grid-template-columns: minmax(0, 1fr); }
+}

@@ -1,0 +1,17 @@
+/* Original mark and typography, recolored for the current UI surfaces. */
+.brand-logo .brand-logo-name { white-space: nowrap; }
+.brand-logo .brand-logo-mirror { color: var(--ui-green); }
+.brand-logo .brand-logo-metrics { color: var(--ui-blue); }
+.brand-logo .brand-logo-subtitle { color: var(--ui-red); }
+.brand-logo.brand-logo--light .brand-logo-mirror { color: var(--ui-white); }
+.brand-logo.brand-logo--light .brand-logo-metrics,
+.brand-logo.brand-logo--light .brand-logo-subtitle { color: var(--text-backplate); }
+
+/* Override old header rules that colored every nested span the same way. */
+.site-header .brand-link .brand-logo .brand-logo-mirror { color: var(--ui-green); }
+.site-header .brand-link .brand-logo .brand-logo-metrics { color: var(--ui-blue); }
+.site-header .brand-link .brand-logo .brand-logo-subtitle { color: var(--ui-red); }
+.is-home .site-header:not(.is-scrolled) .brand-link .brand-logo .brand-logo-mirror { color: var(--ui-white); }
+.is-home .site-header:not(.is-scrolled) .brand-link .brand-logo .brand-logo-metrics,
+.is-home .site-header:not(.is-scrolled) .brand-link .brand-logo .brand-logo-subtitle { color: var(--text-backplate); }
+.brand-logo-emblem { filter: drop-shadow(0 1px 2px #174a8b1a); }

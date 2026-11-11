@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "next/image";
-import defaultEmblem from "../../public/logo.png";
-import accentEmblem from "../../public/logo-accent-emblem.png";
+import defaultEmblem from "../../public/logo-ui.png";
+import accentEmblem from "../../public/logo-ui-light.png";
 
 interface LogoProps {
   variant?: "full" | "emblem-only" | "light" | "accent";
@@ -21,9 +21,9 @@ export function EmblemSvg({
   type?: "default" | "accent";
 }) {
   const isAccent = type === "accent";
-  const leftColor = isAccent ? "#c9363e" : "#16734e";
-  const rightColor = "#174a8b";
-  const eyeColor = "#16734e";
+  const leftColor = isAccent ? "#faebec" : "#16734e";
+  const rightColor = isAccent ? "#ffffff" : "#174a8b";
+  const eyeColor = "#174a8b";
 
   return (
     <svg
@@ -33,6 +33,7 @@ export function EmblemSvg({
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
       className={`shrink-0 ${className}`}
+      role="img"
       aria-label="Mirror Metrics Infinity Eye Emblem"
     >
       {/* Left Loop */}
@@ -54,14 +55,14 @@ export function EmblemSvg({
       <circle cx="130" cy="130" r="68" fill="#ffffff" />
       <circle cx="138" cy="130" r="50" fill={eyeColor} />
       {/* Left Eye Reflection Highlight */}
-      <circle cx="156" cy="112" r="16" fill="#ffffff" />
+      <circle cx="156" cy="112" r="16" fill="#c9363e" />
       {isAccent && <circle cx="130" cy="148" r="7" fill="#ffffff" />}
 
       {/* Right Eye White Base & Iris/Pupil */}
       <circle cx="290" cy="130" r="68" fill="#ffffff" />
       <circle cx="298" cy="130" r="50" fill={eyeColor} />
       {/* Right Eye Reflection Highlight */}
-      <circle cx="316" cy="112" r="16" fill="#ffffff" />
+      <circle cx="316" cy="112" r="16" fill="#c9363e" />
       {isAccent && <circle cx="290" cy="148" r="7" fill="#ffffff" />}
     </svg>
   );
@@ -72,7 +73,7 @@ export default function Logo({
   size = "md",
   className = "",
   useImage = false,
-  emblemSrc = variant === "light" || variant === "accent" ? "accent" : "default",
+  emblemSrc = variant === "light" ? "accent" : "default",
 }: LogoProps) {
   const emblemSizes = {
     sm: { width: 34, height: 21, text: "text-base", sub: "text-[9px]" },
@@ -84,9 +85,9 @@ export default function Logo({
   const activeEmblemImage = emblemSrc === "accent" ? accentEmblem : defaultEmblem;
 
   return (
-    <div className={`flex items-center gap-3 select-none ${className}`}>
+    <div className={`brand-logo brand-logo--${variant} flex items-center gap-3 select-none ${className}`}>
       {/* Scalable Emblem: High-Res PNG with transparent background */}
-      <div className="relative shrink-0 flex items-center justify-center">
+      <div className="brand-logo-emblem relative shrink-0 flex items-center justify-center">
         {useImage ? (
           <Image
             src={activeEmblemImage}
@@ -100,7 +101,7 @@ export default function Logo({
             loading="eager"
           />
         ) : (
-          <EmblemSvg size={currentSize.width} type={emblemSrc} />
+              <EmblemSvg size={currentSize.width} type={emblemSrc} />
         )}
       </div>
 
@@ -108,16 +109,16 @@ export default function Logo({
         <div className="flex flex-col justify-center leading-none">
           {/* Primary Line: Mirror Metrics */}
           <span
-            className={`font-semibold tracking-tight ${
+            className={`brand-logo-name font-semibold tracking-tight ${
               variant === "light" ? "text-[#ffffff]" : "text-[#16734e]"
             } leading-tight ${currentSize.text}`}
           >
-            Mirror Metrics
+            <span className="brand-logo-mirror">Mirror</span>{" "}<span className="brand-logo-metrics">Metrics</span>
           </span>
 
           {/* Secondary Line: RESEARCH LTD */}
           <span
-            className={`uppercase font-medium tracking-[0.2em] ${
+            className={`brand-logo-subtitle uppercase font-medium tracking-[0.2em] ${
               variant === "light" ? "text-[#174a8b]" : "text-[#16734e]"
             } mt-0.5 ${currentSize.sub}`}
           >

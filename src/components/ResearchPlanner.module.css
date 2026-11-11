@@ -4,8 +4,9 @@
   gap: clamp(24px, 5vw, 64px);
   padding: clamp(20px, 4vw, 44px);
   border: 1px solid var(--line);
-  border-radius: 8px;
-  background: var(--paper);
+  border-radius: 22px;
+  background: #fff;
+  box-shadow: 0 18px 60px #39145408;
 }
 
 .controls h2 { font-size: clamp(26px, 3vw, 36px); }
@@ -17,8 +18,8 @@
   min-height: 44px;
   margin-top: 6px;
   padding: 8px 12px;
-  border: 1px solid #8da9bf;
-  border-radius: 5px;
+  border: 1px solid #d8c6e6;
+  border-radius: 10px;
   color: var(--ink);
   background: #fff;
 }
@@ -27,8 +28,8 @@
   min-width: 0;
   padding: clamp(18px, 3vw, 30px);
   border: 1px solid var(--line);
-  border-radius: 6px;
-  background: #fff;
+  border-radius: 14px;
+  background: var(--paper);
 }
 
 .result h3 { margin-top: 8px; font-size: 22px; }

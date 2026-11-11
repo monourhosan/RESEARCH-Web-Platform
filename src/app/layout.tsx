@@ -12,6 +12,7 @@ import "./market-brand.css";
 import "./photo-backgrounds.css";
 import "./interactions.css";
 import "./home-motion.css";
+import "./travel-inspired.css";
 
 const displayFont = localFont({ src: "./fonts/bricolage-grotesque-latin.woff2", variable: "--font-display", weight: "400 700", display: "swap", preload: false });
 const bodyFont = localFont({ src: "./fonts/source-sans-3-latin.woff2", variable: "--font-body", weight: "200 900", display: "swap" });
@@ -26,7 +27,7 @@ export const metadata: Metadata = {
   twitter: { card: "summary_large_image", title: "Mirror Metrics Research Ltd", description: "Market & customer research in Bangladesh.", images: ["/opengraph-image"] },
   icons: { icon: "/icon.svg", apple: "/logo.png" },
 };
-export const viewport: Viewport = { themeColor: "#163554", width: "device-width", initialScale: 1 };
+export const viewport: Viewport = { themeColor: "#350b50", width: "device-width", initialScale: 1 };
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
   return <html lang="en" data-scroll-behavior="smooth" className={`${displayFont.variable} ${bodyFont.variable} ${noteFont.variable}`}><body><Suspense fallback={<main>{children}</main>}><SiteShell>{children}</SiteShell></Suspense></body></html>;
 }

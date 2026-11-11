@@ -1,21 +1,40 @@
 "use client";
 
 import Link from "next/link";
-import { ArrowDown, ArrowUpRight } from "lucide-react";
+import { useState } from "react";
+import { ArrowDown, ArrowUpRight, ChevronLeft, ChevronRight, UsersRound, ScanLine, ChartNoAxesCombined, ClipboardList, Compass, MessageCircle } from "lucide-react";
+import { PHOTOS, type PhotoKey } from "@/data/photography";
 import ScrollPhoto from "./ScrollPhoto";
 
+const scenes: PhotoKey[] = ["dhaka-skyline", "gallery-household-survey", "bangladesh-river"];
+const shortcuts = [
+  { label: "Customer insight", Icon: UsersRound, href: "/services/market-research#research-questions" },
+  { label: "Brand & product", Icon: ScanLine, href: "/services/market-research#research-questions" },
+  { label: "Market opportunity", Icon: ChartNoAxesCombined, href: "/services/market-research#research-questions" },
+  { label: "Build a brief", Icon: ClipboardList, href: "#research-planner" },
+  { label: "Our approach", Icon: Compass, href: "/about" },
+  { label: "Contact", Icon: MessageCircle, href: "/contact" },
+];
+
 export default function Hero({ onOpenProposalModal }: { onOpenProposalModal: () => void }) {
-  return <section id="home" className="hero-section photo-hero">
-    <ScrollPhoto photo="gallery-household-survey" eager />
+  const [scene, setScene] = useState(0);
+  const photo = PHOTOS[scenes[scene]];
+  const changeScene = (direction: number) => setScene(value => (value + direction + scenes.length) % scenes.length);
+  return <section id="home" className="hero-section photo-hero" aria-label="Mirror Metrics introduction">
+    <ScrollPhoto key={scenes[scene]} photo={scenes[scene]} eager />
     <div className="photo-hero-shade" aria-hidden="true" />
     <div className="site-container compact-hero">
       <div className="hero-copy">
         <p className="hero-introduction"><span className="eyebrow-dot" /> Market &amp; customer research · Bangladesh</p>
-        <h1>Know your market.<br /><span>Know your customers.</span></h1>
+        <h1><span className="hero-title-main">Know your market.</span><span className="hero-title-script">Know your customers.</span></h1>
         <p className="hero-description">Clear insight for your next business decision.</p>
-        <div className="hero-actions"><button type="button" className="button button-primary" onClick={onOpenProposalModal}>Discuss your research <ArrowUpRight size={17} /></button><a href="#services" className="button button-outline">Explore services <ArrowDown size={16} /></a></div>
+        <div className="hero-actions"><button type="button" className="button button-primary" onClick={onOpenProposalModal}>Discuss your research <ArrowUpRight size={17} /></button><a href="#services" className="hero-explore">Explore services <ArrowDown size={16} /></a></div>
       </div>
     </div>
-    <div className="site-container photo-hero-caption"><Link href="/photography">BRAC survey, Korail · Reference photo: Lucy Milmo / DFID · CC BY 2.0 <ArrowUpRight size={12} /></Link></div>
+    <button type="button" className="hero-scene-arrow hero-scene-previous" onClick={() => changeScene(-1)} aria-label="Previous background photo"><ChevronLeft size={21} /></button>
+    <button type="button" className="hero-scene-arrow hero-scene-next" onClick={() => changeScene(1)} aria-label="Next background photo"><ChevronRight size={21} /></button>
+    <div className="site-container photo-hero-caption"><Link href="/photography">{photo.title} · Reference photo: {photo.credit} · {photo.license} <ArrowUpRight size={12} /></Link></div>
+    <div className="hero-scene-selector" aria-label="Background photos">{scenes.map((key, index) => <button key={key} type="button" aria-label={`Show ${PHOTOS[key].title}`} aria-pressed={scene === index} onClick={() => setScene(index)}>{String(index + 1).padStart(2, "0")}<span>.</span></button>)}</div>
+    <nav className="hero-shortcuts" aria-label="Research shortcuts">{shortcuts.map(({ label, Icon, href }) => <Link key={label} href={href}><Icon size={22} strokeWidth={1.5} /><span>{label}</span></Link>)}</nav>
   </section>;
 }

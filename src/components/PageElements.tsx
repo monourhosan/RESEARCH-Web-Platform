@@ -9,6 +9,6 @@ export function PageIntro({ label, title, accent, description }: { label: string
   return <section className="page-intro"><div className="site-container"><div className="breadcrumbs"><Link href="/">Home</Link><ArrowRight size={12} /><span>{label}</span></div><div className="page-intro-layout"><div><h1>{title} {accent}</h1><p className="page-intro-description">{description}</p></div><ResearchPhoto photo={photos[label] || "wp-160846"} className="page-intro-photo" /></div></div></section>;
 }
 
-export function PageCta() {
-  return <section className="page-cta"><div className="site-container"><div><h2>What would you like to know?</h2></div><ResearchPhoto photo="wp-18079" className="cta-photo" /><div><ProposalButton /><Link href="/contact" className="button button-outline">Contact the team <ArrowUpRight size={16} /></Link></div></div></section>;
+export function PageCta({ photo = "wp-18079" }: { photo?: PhotoKey }) {
+  return <section className="page-cta"><div className="site-container"><div><h2>What would you like to know?</h2></div><ResearchPhoto photo={photo} className="cta-photo" /><div><ProposalButton /><Link href="/contact" className="button button-outline">Contact the team <ArrowUpRight size={16} /></Link></div></div></section>;
 }

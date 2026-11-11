@@ -1,5 +1,6 @@
 import type { StaticImageData } from "next/image";
 import additionalPhotos from "./additionalPhotos.json";
+import { HOMEPAGE_FIELDWORK_PHOTOS } from "./homepageFieldwork";
 import river from "../../public/photos/bangladesh-river.jpg";
 import community from "../../public/photos/dhaka-community.jpg";
 import market from "../../public/photos/dhaka-market.jpg";
@@ -19,6 +20,7 @@ function photo(src: StaticImageData, alt: string, title: string, credit: string,
 }
 export const PHOTOS = {
   ...additionalPhotos,
+  ...HOMEPAGE_FIELDWORK_PHOTOS,
   "rangpur-farming": photo(farming, "A woman working in a green paddy field in Pirganj, Bangladesh", "People and livelihoods in Pirganj", "masudar rahman", "Pirganj, Rangpur, Bangladesh", 35633316, "center 44%"),
   "rangpur-community": photo(rural, "A woman carrying a goat through green fields in Rangpur, Bangladesh", "Rural life in Rangpur", "masudar rahman", "Rangpur, Bangladesh", 36705426, "center 55%"),
   "dhaka-gathering": photo(gathering, "Community members gathered in Dhaka, Bangladesh", "Community life in Dhaka", "Ian Taylor", "Dhaka, Bangladesh", 37234398, "center 42%", "https://www.iantaylor.ca"),

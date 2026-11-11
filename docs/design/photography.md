@@ -1,5 +1,9 @@
 # Photography update
 
+## Current homepage update — 2026-11-11
+
+The homepage now uses four photorealistic, AI-generated illustrative scenes of household, market, roadside, and agricultural data collection, at the user's request for new realistic fieldwork imagery. These replace all previous homepage photos and the homepage researcher cartoon. The blue, white, green, and red UI is preserved. The scenes are explicitly identified as illustrative on the homepage and at `/photography#illustrative-fieldwork`; they are not records of actual Mirror Metrics staff or projects. Asset paths, exact generation prompts, and provenance are recorded in `homepage-fieldwork-images.md`. Other routes retain their documentary stock photographs. The sections below document the earlier photography rollout.
+
 ## Direction and review
 
 Replace all rendered illustrations, generated scenes, and sketch-style covers with actual camera photographs. Preserve the reference-led forest-green (#003f34), cream (#f5f8f4), stone (#e8e7dc), and sage (#cad8c6) palette and the Source Sans 3 type system.

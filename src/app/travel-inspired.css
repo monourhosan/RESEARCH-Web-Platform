@@ -121,6 +121,8 @@ dialog::backdrop { background: #174a8ba8; backdrop-filter: blur(5px); }
 .bangladesh-research-heading h2 { font-size: clamp(30px, 3.3vw, 44px); }
 .bangladesh-settings .photo-frame { border-radius: 16px; }
 .bangladesh-settings h3 { font-size: 24px; }
+.home-listening-photo .photo-frame { aspect-ratio: 1.5; border-radius: 18px; }
+.research-photo-sources > a { display: inline-flex; align-items: center; gap: 4px; text-decoration: underline; text-underline-offset: 3px; }
 .bangladesh-step-number, .bangladesh-research-output svg { color: var(--ui-green); }
 .bangladesh-research-steps li { border-color: #174a8b33; }
 .bangladesh-research-steps h3 { font-size: 21px; }
@@ -197,6 +199,9 @@ dialog::backdrop { background: #174a8ba8; backdrop-filter: blur(5px); }
   .is-home .photo-hero { margin-top: -76px; min-height: max(770px, calc(100svh - 28px)); }
   .is-home .photo-hero .compact-hero { min-height: max(770px, calc(100svh - 28px)); padding-block: 145px 245px; }
   .photo-hero .hero-copy { padding: 0 9px; }
+  .photo-hero .scroll-photo-layer { inset: 76px 0 auto; height: clamp(260px, 76vw, 420px); transform: none !important; }
+  .photo-hero .scroll-photo img { object-position: center 37% !important; }
+  .photo-hero-shade { background: linear-gradient(180deg, #174a8b26 0%, #174a8b26 22%, #174a8b 48%); }
   .photo-hero .hero-introduction { font-size: 8px; letter-spacing: .11em; gap: 6px; margin-bottom: 25px; }
   .photo-hero .hero-copy h1 { font-size: clamp(31px, 7.5vw, 53px); line-height: 1.04; letter-spacing: -.03em; }
   .photo-hero .hero-copy h1 .hero-title-script { font-size: 1.22em; line-height: 1.1; margin-top: 3px; }

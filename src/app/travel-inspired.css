@@ -90,14 +90,6 @@ dialog::backdrop { background: #174a8ba8; backdrop-filter: blur(5px); }
 .hero-scene-selector { position: absolute; bottom: 85px; right: 40px; display: flex; gap: 4px; }
 .hero-scene-selector button { width: 33px; height: 33px; border-radius: 50%; border: 1px solid transparent; color: #ffffff; font-size: 11px; background: transparent; }
 .hero-scene-selector button[aria-pressed="true"] { border-color: #ffffff; color: #ffffff; }
-.hero-shortcuts { position: absolute; inset: auto 0 0; margin-inline: auto; display: grid; grid-template-columns: repeat(6, minmax(0, 1fr)); width: min(1040px, calc(100% - 160px)); background: #ffffff; border-radius: 80px 80px 0 0; overflow: hidden; }
-.hero-shortcuts a { display: flex; justify-content: center; align-items: center; gap: 10px; min-height: 74px; padding: 16px 10px; color: #174a8b; font-size: 10px; font-weight: 700; text-transform: uppercase; letter-spacing: .015em; transition: background .2s, color .2s; }
-.hero-shortcuts a svg { color: var(--ui-green); flex-shrink: 0; }
-.hero-shortcuts a:first-child { background: var(--ui-green); color: #ffffff; }
-.hero-shortcuts a:first-child svg { color: #ffffff; }
-.hero-shortcuts a:hover { background: #174a8b; color: #ffffff; }
-.hero-shortcuts a:hover svg { color: #ffffff; }
-.hero-shortcuts a:focus-visible { outline-offset: -5px; outline-color: #174a8b; }
 .photo-hero :is(a,button):focus-visible, .is-home .site-header:not(.is-scrolled) :is(a,button):focus-visible { outline-color: #174a8b33; }
 @keyframes hero-photo-appear { from { opacity: .3; } to { opacity: 1; } }
 
@@ -171,8 +163,6 @@ dialog::backdrop { background: #174a8ba8; backdrop-filter: blur(5px); }
   .header-layout { gap: 20px; }
   .desktop-nav { gap: 18px; }
   .site-shell .header-cta { padding-inline: 13px; }
-  .hero-shortcuts { width: calc(100% - 100px); }
-  .hero-shortcuts a { gap: 7px; font-size: 9px; }
 }
 @media (max-width: 1023px) {
   .header-layout { height: 82px; }
@@ -180,8 +170,6 @@ dialog::backdrop { background: #174a8ba8; backdrop-filter: blur(5px); }
   .site-shell .header-cta { display: inline-flex; }
   .menu-toggle { color: var(--ink); }
   .photo-hero .hero-copy h1 { font-size: clamp(44px, 7vw, 70px); }
-  .hero-shortcuts { width: calc(100% - 48px); border-radius: 45px 45px 0 0; }
-  .hero-shortcuts a { flex-direction: column; gap: 8px; min-height: 88px; text-align: center; padding-inline: 8px; }
   .photo-hero .photo-hero-caption { bottom: 110px; left: 24px; }
   .hero-scene-selector { bottom: 105px; right: 24px; }
   .hero-scene-previous { left: 18px; }
@@ -213,9 +201,6 @@ dialog::backdrop { background: #174a8ba8; backdrop-filter: blur(5px); }
   .hero-scene-next { right: 20px; }
   .hero-scene-selector { bottom: 199px; left: 50%; right: auto; transform: translateX(-50%); }
   .photo-hero .photo-hero-caption { bottom: 154px; left: 20px; max-width: calc(100% - 40px); font-size: 8px; text-align: center; width: calc(100% - 40px); justify-content: center; }
-  .hero-shortcuts { width: calc(100% - 28px); grid-template-columns: repeat(3, minmax(0, 1fr)); border-radius: 35px 35px 0 0; }
-  .hero-shortcuts a { min-height: 69px; padding: 11px 5px; gap: 5px; font-size: 8px; border-bottom: 1px solid #174a8b33; }
-  .hero-shortcuts a svg { width: 19px; height: 19px; }
   .section-space, .is-home .market-services.section-space, .is-home .bangladesh-research.section-space { padding-block: 58px; }
   .market-section-heading { align-items: start; gap: 20px; margin-bottom: 28px; }
   .market-section-heading h2 { font-size: 31px; }

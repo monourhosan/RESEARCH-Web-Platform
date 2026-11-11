@@ -2,20 +2,12 @@
 
 import Link from "next/link";
 import { useState } from "react";
-import { ArrowDown, ArrowUpRight, ChevronLeft, ChevronRight, UsersRound, ScanLine, ChartNoAxesCombined, ClipboardList, Compass, MessageCircle } from "lucide-react";
+import { ArrowDown, ArrowUpRight, ChevronLeft, ChevronRight } from "lucide-react";
 import { PHOTOS, type PhotoKey } from "@/data/photography";
 import { HOMEPAGE_FIELDWORK_SETTINGS } from "@/data/homepageFieldwork";
 import ScrollPhoto from "./ScrollPhoto";
 
 const scenes: PhotoKey[] = HOMEPAGE_FIELDWORK_SETTINGS.map(setting => setting.photo);
-const shortcuts = [
-  { label: "Customer insight", Icon: UsersRound, href: "/services/market-research#research-questions" },
-  { label: "Brand & product", Icon: ScanLine, href: "/services/market-research#research-questions" },
-  { label: "Market opportunity", Icon: ChartNoAxesCombined, href: "/services/market-research#research-questions" },
-  { label: "Build a brief", Icon: ClipboardList, href: "#research-planner" },
-  { label: "Our approach", Icon: Compass, href: "/about" },
-  { label: "Contact", Icon: MessageCircle, href: "/contact" },
-];
 
 export default function Hero({ onOpenProposalModal }: { onOpenProposalModal: () => void }) {
   const [scene, setScene] = useState(0);
@@ -36,6 +28,5 @@ export default function Hero({ onOpenProposalModal }: { onOpenProposalModal: () 
     <button type="button" className="hero-scene-arrow hero-scene-next" onClick={() => changeScene(1)} aria-label="Next background photo"><ChevronRight size={21} /></button>
     <div className="site-container photo-hero-caption"><Link href="/photography#illustrative-fieldwork">{photo.title} · AI-generated illustrative scene <ArrowUpRight size={12} /></Link></div>
     <div className="hero-scene-selector" aria-label="Background photos">{scenes.map((key, index) => <button key={key} type="button" aria-label={`Show ${PHOTOS[key].title}`} aria-pressed={scene === index} onClick={() => setScene(index)}>{String(index + 1).padStart(2, "0")}<span>.</span></button>)}</div>
-    <nav className="hero-shortcuts" aria-label="Research shortcuts">{shortcuts.map(({ label, Icon, href }) => <Link key={label} href={href}><Icon size={22} strokeWidth={1.5} /><span>{label}</span></Link>)}</nav>
   </section>;
 }

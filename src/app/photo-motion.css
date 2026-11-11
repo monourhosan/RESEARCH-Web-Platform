@@ -1,0 +1,17 @@
+/* Mouse and scroll move only the photographs; frames and text stay still. */
+[data-photo-motion] { overflow: hidden; }
+[data-photo-motion] > img {
+  translate: var(--photo-x, 0px) var(--photo-y, 0px);
+  scale: 1.08;
+  transform-origin: center;
+}
+[data-photo-motion][data-photo-visible] > img { will-change: translate; }
+@media (prefers-reduced-motion: reduce) {
+  [data-photo-motion] > img {
+    translate: none !important;
+    scale: 1 !important;
+    transform: none !important;
+    will-change: auto !important;
+    transition: none !important;
+  }
+}

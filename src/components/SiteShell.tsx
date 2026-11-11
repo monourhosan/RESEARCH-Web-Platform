@@ -6,6 +6,7 @@ import Footer from "./Footer";
 import ProposalModal from "./ProposalModal";
 import { ArrowUpRight } from "lucide-react";
 import { usePathname } from "next/navigation";
+import PhotoMotion from "./PhotoMotion";
 
 const ProposalContext = createContext<() => void>(() => {});
 export const useProposal = () => useContext(ProposalContext);
@@ -18,5 +19,5 @@ export function ProposalButton({ children = "Discuss your research", className =
 export default function SiteShell({ children }: { children: ReactNode }) {
   const [proposalOpen, setProposalOpen] = useState(false);
   const pathname = usePathname();
-  return <ProposalContext.Provider value={() => setProposalOpen(true)}><div className={`site-shell${pathname === "/" ? " is-home" : ""}`}><Header onOpenProposalModal={() => setProposalOpen(true)} /><main id="main-content" tabIndex={-1}>{children}</main><Footer /></div><ProposalModal isOpen={proposalOpen} onClose={() => setProposalOpen(false)} /></ProposalContext.Provider>;
+  return <ProposalContext.Provider value={() => setProposalOpen(true)}><PhotoMotion /><div className={`site-shell${pathname === "/" ? " is-home" : ""}`}><Header onOpenProposalModal={() => setProposalOpen(true)} /><main id="main-content" tabIndex={-1}>{children}</main><Footer /></div><ProposalModal isOpen={proposalOpen} onClose={() => setProposalOpen(false)} /></ProposalContext.Provider>;
 }

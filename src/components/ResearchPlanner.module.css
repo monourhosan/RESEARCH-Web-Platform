@@ -5,8 +5,8 @@
   padding: clamp(20px, 4vw, 44px);
   border: 1px solid var(--line);
   border-radius: 22px;
-  background: #fff;
-  box-shadow: 0 18px 60px #39145408;
+  background: #ffffff;
+  box-shadow: 0 18px 60px #174a8b08;
 }
 
 .controls h2 { font-size: clamp(26px, 3vw, 36px); }
@@ -18,10 +18,10 @@
   min-height: 44px;
   margin-top: 6px;
   padding: 8px 12px;
-  border: 1px solid #d8c6e6;
+  border: 1px solid #174a8b33;
   border-radius: 10px;
   color: var(--ink);
-  background: #fff;
+  background: #ffffff;
 }
 
 .result {

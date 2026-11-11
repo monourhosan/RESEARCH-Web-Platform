@@ -21,9 +21,9 @@ export function EmblemSvg({
   type?: "default" | "accent";
 }) {
   const isAccent = type === "accent";
-  const leftColor = isAccent ? "#F25244" : "#2B5B9E";
-  const rightColor = isAccent ? "#27AE60" : "#1CA8B8";
-  const eyeColor = isAccent ? "#F2B024" : "#0E2238";
+  const leftColor = isAccent ? "#c9363e" : "#174a8b";
+  const rightColor = "#16734e";
+  const eyeColor = "#174a8b";
 
   return (
     <svg
@@ -51,18 +51,18 @@ export function EmblemSvg({
       <rect x="208" y="85" width="4" height="90" fill={leftColor} opacity="0.3" />
 
       {/* Left Eye White Base & Iris/Pupil */}
-      <circle cx="130" cy="130" r="68" fill="#FFFFFF" />
+      <circle cx="130" cy="130" r="68" fill="#ffffff" />
       <circle cx="138" cy="130" r="50" fill={eyeColor} />
       {/* Left Eye Reflection Highlight */}
-      <circle cx="156" cy="112" r="16" fill="#FFFFFF" />
-      {isAccent && <circle cx="130" cy="148" r="7" fill="#FFFFFF" />}
+      <circle cx="156" cy="112" r="16" fill="#ffffff" />
+      {isAccent && <circle cx="130" cy="148" r="7" fill="#ffffff" />}
 
       {/* Right Eye White Base & Iris/Pupil */}
-      <circle cx="290" cy="130" r="68" fill="#FFFFFF" />
+      <circle cx="290" cy="130" r="68" fill="#ffffff" />
       <circle cx="298" cy="130" r="50" fill={eyeColor} />
       {/* Right Eye Reflection Highlight */}
-      <circle cx="316" cy="112" r="16" fill="#FFFFFF" />
-      {isAccent && <circle cx="290" cy="148" r="7" fill="#FFFFFF" />}
+      <circle cx="316" cy="112" r="16" fill="#ffffff" />
+      {isAccent && <circle cx="290" cy="148" r="7" fill="#ffffff" />}
     </svg>
   );
 }
@@ -71,7 +71,7 @@ export default function Logo({
   variant = "full",
   size = "md",
   className = "",
-  useImage = true,
+  useImage = false,
   emblemSrc = variant === "light" || variant === "accent" ? "accent" : "default",
 }: LogoProps) {
   const emblemSizes = {
@@ -109,7 +109,7 @@ export default function Logo({
           {/* Primary Line: Mirror Metrics */}
           <span
             className={`font-semibold tracking-tight ${
-              variant === "light" ? "text-[#edf4f0]" : "text-[#142c3d]"
+              variant === "light" ? "text-[#ffffff]" : "text-[#174a8b]"
             } leading-tight ${currentSize.text}`}
           >
             Mirror Metrics
@@ -118,7 +118,7 @@ export default function Logo({
           {/* Secondary Line: RESEARCH LTD */}
           <span
             className={`uppercase font-medium tracking-[0.2em] ${
-              variant === "light" ? "text-[#a7c0c1]" : "text-[#60707a]"
+              variant === "light" ? "text-[#16734e]" : "text-[#174a8b]"
             } mt-0.5 ${currentSize.sub}`}
           >
             RESEARCH LTD

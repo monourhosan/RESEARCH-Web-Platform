@@ -9,8 +9,8 @@ export const INTERNET_TREND = internet.data
   .sort((a, b) => a.year - b.year);
 const urbanShare = urban.data.find(item => Number(item.date) === DATA_YEAR)!.value as number;
 export const POPULATION_PROFILE = [
-  { label: "Urban", value: urbanShare, color: "#004f40" },
-  { label: "Rural", value: 100 - urbanShare, color: "#91ae78" },
+  { label: "Urban", value: urbanShare, color: "#174a8b" },
+  { label: "Rural", value: 100 - urbanShare, color: "#16734e" },
 ];
 export const DATA_RETRIEVED = snapshot.retrievedAt;
 export const DATA_UPDATED = internet.metadata.lastupdated;

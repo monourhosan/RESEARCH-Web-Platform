@@ -21,9 +21,9 @@ export function EmblemSvg({
   type?: "default" | "accent";
 }) {
   const isAccent = type === "accent";
-  const leftColor = isAccent ? "#c9363e" : "#174a8b";
-  const rightColor = "#16734e";
-  const eyeColor = "#174a8b";
+  const leftColor = isAccent ? "#c9363e" : "#16734e";
+  const rightColor = "#174a8b";
+  const eyeColor = "#16734e";
 
   return (
     <svg
@@ -109,7 +109,7 @@ export default function Logo({
           {/* Primary Line: Mirror Metrics */}
           <span
             className={`font-semibold tracking-tight ${
-              variant === "light" ? "text-[#ffffff]" : "text-[#174a8b]"
+              variant === "light" ? "text-[#ffffff]" : "text-[#16734e]"
             } leading-tight ${currentSize.text}`}
           >
             Mirror Metrics
@@ -118,7 +118,7 @@ export default function Logo({
           {/* Secondary Line: RESEARCH LTD */}
           <span
             className={`uppercase font-medium tracking-[0.2em] ${
-              variant === "light" ? "text-[#16734e]" : "text-[#174a8b]"
+              variant === "light" ? "text-[#174a8b]" : "text-[#16734e]"
             } mt-0.5 ${currentSize.sub}`}
           >
             RESEARCH LTD

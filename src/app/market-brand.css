@@ -1,26 +1,26 @@
 /* Market research palette: navy, white, and green. */
-:root { --background: #ffffff; --ink: #174a8b; --foreground: #174a8b; --muted: #174a8b; --blue: #174a8b; --forest: #174a8b; --teal: #16734e; --line: #ffffff; --stone: #ffffff; --paper: #ffffff; }
+:root { --background: #ffffff; --ink: #16734e; --foreground: #16734e; --muted: #16734e; --blue: #16734e; --forest: #16734e; --teal: #174a8b; --line: #ffffff; --stone: #ffffff; --paper: #ffffff; }
 body { color: var(--ink); background: var(--background); }
 h1, h2, h3, h4 { font-family: var(--font-display), sans-serif; }
 .eyebrow { letter-spacing: .09em; text-transform: uppercase; font-size: 10px; }
-.eyebrow-dot { background: #16734e; }
+.eyebrow-dot { background: #174a8b; }
 .button { border-radius: 4px; }
-.button-primary, .is-home .site-header:not(.is-scrolled) .header-cta { background: #174a8b; border-color: #174a8b; }
-.button-primary:hover, .is-home .site-header:not(.is-scrolled) .header-cta:hover { background: #174a8b; }
-.button-light { background: #ffffff; color: #174a8b; }
-.is-home .site-header:not(.is-scrolled) .brand-link span { color: #174a8b; }
-.is-home .site-header:not(.is-scrolled) .brand-link span:last-child { color: #174a8b; }
+.button-primary, .is-home .site-header:not(.is-scrolled) .header-cta { background: #16734e; border-color: #16734e; }
+.button-primary:hover, .is-home .site-header:not(.is-scrolled) .header-cta:hover { background: #16734e; }
+.button-light { background: #ffffff; color: #16734e; }
+.is-home .site-header:not(.is-scrolled) .brand-link span { color: #16734e; }
+.is-home .site-header:not(.is-scrolled) .brand-link span:last-child { color: #16734e; }
 .is-home .hero-section { background: #ffffff; border-bottom: 1px solid var(--line); }
 .is-home .compact-hero { padding-block: 42px 36px; grid-template-columns: 1.1fr 1fr; gap: 56px; }
-.hero-introduction { color: #174a8b; font-size: 11px; letter-spacing: .025em; }
+.hero-introduction { color: #16734e; font-size: 11px; letter-spacing: .025em; }
 .hero-copy h1 { font-family: var(--font-display), sans-serif; font-size: clamp(36px, 3.8vw, 50px); font-weight: 550; line-height: 1.1; letter-spacing: -.045em; }
-.hero-copy h1 span { color: #16734e; }
+.hero-copy h1 span { color: #174a8b; }
 .hero-description { font-size: 16px; max-width: 400px; margin-top: 18px; }
 .hero-actions { margin-top: 24px; gap: 20px; }
 .hero-location { margin-top: 24px; font-size: 11px; }
 .is-home .hero-photo-frame { height: 330px; border-radius: 4px; }
 .hero-photo-frame img { object-position: 50% 45%; }
-.market-photo-label { position: absolute; inset: auto 0 0; padding: 44px 22px 22px; color: white; background: linear-gradient(transparent, #174a8bed); }
+.market-photo-label { position: absolute; inset: auto 0 0; padding: 44px 22px 22px; color: white; background: linear-gradient(transparent, #16734eed); }
 .market-photo-label span { display: block; font-size: 11px; margin-bottom: 5px; color: #ffffff; }
 .market-photo-label strong { font-family: var(--font-display), sans-serif; font-size: 19px; font-weight: 500; }
 .hero-photo figcaption { font-size: 9px; }
@@ -31,18 +31,18 @@ h1, h2, h3, h4 { font-family: var(--font-display), sans-serif; }
 .market-service-grid { display: grid; grid-template-columns: repeat(3, 1fr); border: 1px solid var(--line); border-radius: 4px; overflow: hidden; }
 .market-service-card { display: flex; flex-direction: column; min-width: 0; padding: 30px; background: white; }
 .market-service-card + .market-service-card { border-left: 1px solid var(--line); }
-.market-service-top { display: flex; justify-content: space-between; align-items: center; color: #16734e; margin-bottom: 22px; }
-.market-service-top span { font-size: 11px; color: #174a8b; font-variant-numeric: tabular-nums; }
+.market-service-top { display: flex; justify-content: space-between; align-items: center; color: #174a8b; margin-bottom: 22px; }
+.market-service-top span { font-size: 11px; color: #16734e; font-variant-numeric: tabular-nums; }
 .market-service-card h3 { font-size: 20px; line-height: 1.3; }
 .market-service-card h3 a { display: flex; justify-content: space-between; gap: 8px; }
-.market-service-card h3 svg { flex-shrink: 0; margin-top: 4px; color: #16734e; transition: transform .2s; }
+.market-service-card h3 svg { flex-shrink: 0; margin-top: 4px; color: #174a8b; transition: transform .2s; }
 .market-service-card h3 a:hover svg { transform: translate(2px, -2px); }
 .market-service-card p { font-size: 14px; color: var(--muted); line-height: 1.65; margin-block: 14px 0; }
-.market-service-tags { margin-top: auto; padding-top: 14px; border-top: 1px solid var(--line); color: #174a8b; font-size: 10px; }
+.market-service-tags { margin-top: auto; padding-top: 14px; border-top: 1px solid var(--line); color: #16734e; font-size: 10px; }
 .market-services-foot { display: flex; flex-wrap: wrap; align-items: center; gap: 14px 28px; margin-top: 18px; font-size: 11px; color: var(--muted); }
-.market-services-foot > span::before { content: ""; display: inline-block; width: 4px; height: 4px; background: #16734e; vertical-align: middle; margin-right: 8px; }
+.market-services-foot > span::before { content: ""; display: inline-block; width: 4px; height: 4px; background: #174a8b; vertical-align: middle; margin-right: 8px; }
 .market-services-foot a { display: inline-flex; align-items: center; gap: 6px; margin-left: auto; color: var(--ink); }
-.research-introduction { background: #174a8b; color: #ffffff; }
+.research-introduction { background: #16734e; color: #ffffff; }
 .research-introduction .eyebrow { color: #ffffff; }
 .introduction-layout { gap: 64px; }
 .introduction-layout h2 { font-size: 32px; }
@@ -50,13 +50,13 @@ h1, h2, h3, h4 { font-family: var(--font-display), sans-serif; }
 .introduction-layout .text-link { color: #ffffff; font-size: 12px; }
 .market-method { list-style: none; display: flex; flex-wrap: wrap; gap: 8px 18px; counter-reset: research; margin: 20px 0 0; padding: 0; font-size: 11px; color: #ffffff; }
 .market-method li { counter-increment: research; }
-.market-method li::before { content: "0" counter(research); color: #16734e; margin-right: 6px; font-size: 10px; }
+.market-method li::before { content: "0" counter(research); color: #174a8b; margin-right: 6px; font-size: 10px; }
 .is-home .research-character { max-width: 275px; border-radius: 4px; background: #ffffff; }
-.research-character button:focus-visible { outline-color: #16734e; }
+.research-character button:focus-visible { outline-color: #174a8b; }
 .page-cta { background: #ffffff; border-bottom: 1px solid var(--line); }
-.page-cta h2 { font-size: 30px; color: #174a8b; }
-.page-cta .handwritten { color: #174a8b; }
-.site-footer { background: #174a8b; }
+.page-cta h2 { font-size: 30px; color: #16734e; }
+.page-cta .handwritten { color: #16734e; }
+.site-footer { background: #16734e; }
 .footer-brand > span, .footer-links > span, .footer-contact > span, .footer-bottom { color: #ffffff; }
 .footer-links > a, .footer-contact > p, .footer-contact > .footer-email { color: #ffffff; }
 .footer-links a:hover, .footer-contact a:hover { color: #ffffff; }
@@ -69,8 +69,8 @@ h1, h2, h3, h4 { font-family: var(--font-display), sans-serif; }
 .bangladesh-research-heading h2 { margin-top: 12px; font-size: 34px; }
 .bangladesh-research-heading > p { color: var(--muted); max-width: 440px; font-size: 15px; line-height: 1.7; }
 .bangladesh-research-steps { display: grid; grid-template-columns: repeat(4, 1fr); gap: 26px; list-style: none; padding: 0; margin: 32px 0; }
-.bangladesh-research-steps li { border-top: 1px solid #174a8b33; padding-top: 17px; }
-.bangladesh-step-number { color: #16734e; font-size: 11px; font-weight: 600; }
+.bangladesh-research-steps li { border-top: 1px solid #16734e33; padding-top: 17px; }
+.bangladesh-step-number { color: #174a8b; font-size: 11px; font-weight: 600; }
 .bangladesh-research-steps h3 { margin-top: 10px; font-size: 18px; line-height: 1.3; }
 .bangladesh-research-steps p { margin-top: 10px; color: var(--muted); font-size: 13px; line-height: 1.75; }
 .is-home .market-services.section-space, .is-home .bangladesh-research.section-space { padding-block: 60px; }
@@ -91,7 +91,7 @@ h1, h2, h3, h4 { font-family: var(--font-display), sans-serif; }
 .bangladesh-photo-note { color: var(--muted); font-size: 10px; margin-top: 22px; }
 .bangladesh-research-output { border-top: 1px solid var(--line); margin-top: 24px; padding-top: 22px; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 20px; }
 .bangladesh-research-output > div > p:last-child { display: flex; flex-wrap: wrap; align-items: center; gap: 7px; margin-top: 9px; font-size: 12px; }
-.bangladesh-research-output svg { color: #16734e; flex-shrink: 0; }
+.bangladesh-research-output svg { color: #174a8b; flex-shrink: 0; }
 .bangladesh-research-output > div > p:last-child svg:not(:first-child) { margin-left: 12px; }
 .bangladesh-research-output .text-link { font-size: 12px; }
 @media (max-width: 1023px) and (min-width: 768px) {

@@ -6,11 +6,11 @@
   outline: 3px solid var(--teal);
   outline-offset: 4px;
 }
-.site-footer :is(button, a):focus-visible, .research-introduction a:focus-visible { outline-color: #174a8b33; }
+.site-footer :is(button, a):focus-visible, .research-introduction a:focus-visible { outline-color: #16734e33; }
 /* Hover applies only to devices with a real pointing device. */
 @media (hover: hover) and (pointer: fine) {
   :is(.site-shell, .proposal-dialog) :is(button, [role="button"], a.button, a.text-link, a.service-link, input[type="submit"]):not(:disabled):not([aria-disabled="true"]):hover { translate: 0 -1px; }
-  .site-shell .button:not(:disabled):hover, .proposal-dialog .button:not(:disabled):hover { transform: none; translate: 0 -2px; box-shadow: 0 5px 14px #174a8b26; }
+  .site-shell .button:not(:disabled):hover, .proposal-dialog .button:not(:disabled):hover { transform: none; translate: 0 -2px; box-shadow: 0 5px 14px #16734e26; }
 }
 /* Press feedback also works on touch without a sticky hover state. */
 :is(.site-shell, .proposal-dialog) :is(button, [role="button"], a.button, a.text-link, a.service-link, input[type="submit"]):not(:disabled):not([aria-disabled="true"]):active { translate: 0 1px; }
@@ -24,22 +24,22 @@
 /* Clear action hierarchy: filled primary actions and outlined secondary actions. */
 .site-shell .button, .proposal-dialog .button { min-height: 48px; padding: 13px 22px; gap: 14px; border-radius: 7px; font-size: 14px; font-weight: 600; line-height: 1.4; }
 .site-shell .button-primary, .proposal-dialog .button-primary,
-.is-home .site-header:not(.is-scrolled) .header-cta { background: #16734e; color: #ffffff; border-color: #16734e; box-shadow: 0 2px 5px #174a8b14; }
-.site-shell .button-outline { border: 1px solid #174a8b; background: transparent; color: var(--ink); }
-.site-shell .button-light { background: #ffffff; border-color: #174a8b33; color: #16734e; }
+.is-home .site-header:not(.is-scrolled) .header-cta { background: #174a8b; color: #ffffff; border-color: #174a8b; box-shadow: 0 2px 5px #16734e14; }
+.site-shell .button-outline { border: 1px solid #16734e; background: transparent; color: var(--ink); }
+.site-shell .button-light { background: #ffffff; border-color: #16734e33; color: #174a8b; }
 .site-shell .header-cta { min-height: 44px; font-size: 13px; padding: 11px 18px; }
 .site-shell .button > svg, .proposal-dialog .button > svg { flex-shrink: 0; width: 18px; height: 18px; transition: transform 180ms cubic-bezier(.2,.7,.25,1); }
-.photo-hero .hero-actions .button-primary { color: var(--ink); background: #ffffff; border-color: #174a8b33; box-shadow: 0 3px 12px #174a8b33; }
-.photo-hero .hero-actions .button-outline { color: #ffffff; border-color: #174a8bb8; background: #174a8b55; }
+.photo-hero .hero-actions .button-primary { color: var(--ink); background: #ffffff; border-color: #16734e33; box-shadow: 0 3px 12px #16734e33; }
+.photo-hero .hero-actions .button-outline { color: #ffffff; border-color: #16734eb8; background: #16734e55; }
 .site-shell .menu-toggle, .site-shell .icon-button, .proposal-header > button { min-width: 44px; min-height: 44px; }
-.site-shell :is(.photo-hero, .photo-approach, .site-footer) :is(button, a):focus-visible { outline-color: #174a8b33; }
+.site-shell :is(.photo-hero, .photo-approach, .site-footer) :is(button, a):focus-visible { outline-color: #16734e33; }
 .page-cta > .site-container > div:last-child { align-items: stretch; gap: 12px; }
 @media (hover: hover) and (pointer: fine) {
   .site-shell .button-primary:not(:disabled):hover, .proposal-dialog .button-primary:not(:disabled):hover,
-  .is-home .site-header:not(.is-scrolled) .header-cta:hover { background: #174a8b; border-color: #174a8b; }
-  .site-shell .button-outline:hover { background: #ffffff; border-color: #174a8b; }
+  .is-home .site-header:not(.is-scrolled) .header-cta:hover { background: #16734e; border-color: #16734e; }
+  .site-shell .button-outline:hover { background: #ffffff; border-color: #16734e; }
   .site-shell .button-light:not(:disabled):hover { background: #ffffff; }
-  .photo-hero .hero-actions .button-primary:not(:disabled):hover { background: #ffffff; border-color: #174a8b33; }
+  .photo-hero .hero-actions .button-primary:not(:disabled):hover { background: #ffffff; border-color: #16734e33; }
   .photo-hero .hero-actions .button-outline:hover { background: #ffffff1c; border-color: #ffffff; }
   .site-shell .button:not(:disabled):hover > svg, .proposal-dialog .button:not(:disabled):hover > svg { transform: translateX(3px); }
   .photo-hero .hero-actions .button-outline:hover > svg { transform: translateY(3px); }

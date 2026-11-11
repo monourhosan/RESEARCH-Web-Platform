@@ -15,6 +15,7 @@ import "./home-motion.css";
 import "./travel-inspired.css";
 import "./photo-motion.css";
 import "./research-dock.css";
+import "./text-backplates.css";
 
 const displayFont = localFont({ src: "./fonts/bricolage-grotesque-latin.woff2", variable: "--font-display", weight: "400 700", display: "swap", preload: false });
 const bodyFont = localFont({ src: "./fonts/source-sans-3-latin.woff2", variable: "--font-body", weight: "200 900", display: "swap" });

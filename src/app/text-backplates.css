@@ -1,0 +1,82 @@
+/* A light tint of the existing red, applied to selected white-copy groups. */
+:root {
+  --text-backplate: color-mix(in srgb, var(--ui-red) 10%, var(--ui-white));
+  --text-backplate-border: color-mix(in srgb, var(--ui-red) 24%, var(--ui-white));
+}
+
+/* Headline and supporting copy get individual backplates so photos stay visible. */
+.photo-hero .hero-copy h1 :is(.hero-title-main, .hero-title-script),
+.photo-hero .hero-introduction,
+.photo-hero .hero-description,
+.photo-hero .hero-explore {
+  width: fit-content;
+  max-width: 100%;
+  margin-inline: auto;
+  background: var(--text-backplate);
+  color: var(--ui-green);
+  border-radius: 12px;
+}
+.photo-hero .hero-copy h1 :is(.hero-title-main, .hero-title-script) { padding: .06em .16em; }
+.photo-hero .hero-introduction { padding: 7px 14px; border-radius: 30px; }
+.photo-hero .hero-description { padding: 7px 14px; }
+.photo-hero .hero-explore { padding: 8px 14px; border-radius: 30px; }
+.photo-hero .hero-explore:hover { color: var(--ui-blue); }
+
+/* Captions on dark photographic scenes. */
+.photo-hero .photo-hero-caption,
+.photo-approach .photo-approach-credit {
+  width: fit-content;
+  max-width: calc(100% - 230px);
+  padding: 8px 12px;
+  border-radius: 12px;
+  background: var(--text-backplate);
+  color: var(--ui-green);
+}
+.photo-approach .photo-approach-credit { max-width: calc(100% - 40px); }
+
+/* Conversation features on the homepage, About, and market-research page. */
+.photo-approach .introduction-layout > div:first-child,
+.fieldwork-copy,
+.market-journey-intro > div:first-child,
+.market-journey-map > li:nth-child(-n+3),
+.market-journey-conclusion {
+  padding: clamp(20px, 3vw, 30px);
+  border: 1px solid var(--text-backplate-border);
+  border-radius: 20px;
+  background: var(--text-backplate);
+  color: var(--ui-green);
+}
+.photo-approach .introduction-layout > div:first-child :is(h2, p, .text-link),
+.fieldwork-copy :is(h2, .handwritten, .text-link),
+.fieldwork-copy > p:not(.handwritten),
+.market-journey-intro > div:first-child :is(h2, .eyebrow),
+.market-journey-intro > div:first-child p:not(.eyebrow),
+.market-journey-map > li:nth-child(-n+3) :is(h3, h4, p),
+.market-journey-conclusion :is(span, p) { color: var(--ui-green); }
+
+/* Footer copy panels; the white logo and blue action controls keep contrast. */
+.site-footer :is(.footer-links, .footer-contact, .footer-bottom) {
+  padding: 22px;
+  border: 1px solid var(--text-backplate-border);
+  border-radius: 18px;
+  background: var(--text-backplate);
+  color: var(--ui-green);
+}
+.site-footer .footer-links > :is(span, a),
+.site-footer .footer-contact > :is(span, p, .footer-email),
+.site-footer .footer-bottom :is(p, a) { color: var(--ui-green); }
+.site-footer .footer-contact > a:first-of-type { font-size: 16px; border-bottom-color: var(--text-backplate-border); }
+.site-footer .footer-links a:hover,
+.site-footer .footer-contact a:hover { color: var(--ui-blue); }
+.site-footer .footer-bottom { margin-top: 28px; }
+.site-footer .footer-main { gap: clamp(24px, 4vw, 52px); }
+
+@media (max-width: 767px) {
+  .photo-hero .hero-description { max-width: 270px; }
+  .photo-hero .photo-hero-caption { max-width: calc(100% - 40px); }
+  .photo-hero .hero-copy h1 :is(.hero-title-main, .hero-title-script) { border-radius: 10px; }
+  .site-footer :is(.footer-links, .footer-contact, .footer-bottom) { padding: 18px; }
+  .market-journey-map > li:nth-child(-n+3) { margin: 0 0 24px; }
+  .market-journey-map > li:nth-child(-n+3) .journey-point { margin: 0 0 14px; }
+  .market-journey-map > li:nth-child(-n+3) h3 { margin-top: 0; }
+}
